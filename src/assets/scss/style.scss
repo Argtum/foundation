@@ -1,0 +1,345 @@
+@import "reset";
+@import "mixins";
+@import 'settings';
+@import 'foundation';
+
+@include foundation-everything;
+
+.header
+{
+	height: 150px;
+}
+
+.main
+{
+  .hero-carousel
+  {
+	height: 880px;
+	@include hero-carousel__element_background(1);
+
+	.hero-carousel__element
+	{
+	  .hero-carousel__element-title
+	  {
+		@include font_style($white_font_color, 900 78px/88px 'Lato', sans-serif);
+		letter-spacing: 5px;
+	  }
+
+	  .hero-carousel__element-text
+	  {
+		@include font_style(#A5B1C0, 24px/32px 'Lato', sans-serif);
+	  }
+
+	  .hero-carousel__element-button
+	  {
+		@include font_style($white_font_color, 700  18px/20px 'Source Sans Pro', sans-serif);
+		width: 295px;
+		height: 65px;
+		cursor: pointer;
+		display: block;
+		background-color: #00bb9b;
+		border-radius: 3px;
+	  }
+	}
+
+	.hero-carousel__element-1
+	{
+	  //@include hero-carousel__element_background(1);
+	  //display: none;
+
+	  .hero-carousel__element-title-1
+	  {
+		margin-top: 290px;
+	  }
+
+	  .hero-carousel__element-text-1
+	  {
+		margin-top: 5px;
+		letter-spacing: 1px;
+	  }
+
+	  .hero-carousel__element-button-1
+	  {
+		margin: 45px auto 0;
+	  }
+	}
+
+	.hero-carousel__element-2
+	{
+	  //@include hero-carousel__element_background(2);
+	  display: none;
+
+	  .hero-carousel__element-title-2
+	  {
+		padding-top: 240px;
+	  }
+
+	  .hero-carousel__element-text-2
+	  {
+		margin-top: 5px;
+	  }
+
+	  .hero-carousel__element-button-2
+	  {
+		margin-top: 45px;
+	  }
+	}
+
+	.hero-carousel__element-3
+	{
+	  //@include hero-carousel__element_background(3);
+	  display: none;
+
+	  .hero-carousel__element-title-3-1
+	  {
+		margin-top: 200px;
+		color: $white_font_color;
+		background-color: #536A86;
+		padding: 0 30px;
+		line-height: 120px;
+	  }
+
+	  .hero-carousel__element-title-3-2
+	  {
+		color: $white_font_color;
+		background-color: #536A86;
+		letter-spacing: 0;
+		padding: 0 30px;
+		line-height: 120px;
+	  }
+
+	  .hero-carousel__element-text-3
+	  {
+		margin-top: 20px;
+		color: #536A86;
+	  }
+
+	  .hero-carousel__element-button-3
+	  {
+		margin-top: 170px;
+	  }
+	}
+
+	.hero-carousel__element-4
+	{
+	  //@include hero-carousel__element_background(4);
+	  display: none;
+
+	  .hero-carousel__element-title-4-1
+	  {
+		margin-top: 85px;
+		color: $white_font_color;
+		background-color: #536A86;
+		padding: 0 30px;
+		line-height: 120px;
+		letter-spacing: 1px;
+	  }
+
+	  .hero-carousel__element-title-4-2
+	  {
+		color: $white_font_color;
+		background-color: #536A86;
+		letter-spacing: 1px;
+		padding: 0 30px;
+		line-height: 120px;
+	  }
+
+	  .hero-carousel__element-text-4
+	  {
+		margin-top: 20px;
+		color: $white_font_color;
+	  }
+
+	  .hero-carousel__element-button-4
+	  {
+		margin-top: 60px;
+	  }
+	}
+
+	.hero-carousel__element-5
+	{
+	  //@include hero-carousel__element_background(5);
+	  display: none;
+
+	  .hero-carousel__element-title-5
+	  {
+		padding-top: 80px;
+	  }
+
+	  .hero-carousel__element-text-5
+	  {
+		margin-top: 20px;
+	  }
+
+	  .hero-carousel__element-button-5
+	  {
+		margin: 40px auto 0;
+	  }
+	}
+  }
+
+  .who_we_are
+  {
+	height: 670px;
+
+	.who_we_are__headline
+	{
+	  .who_we_are__headline-title
+	  {
+		@include font_style($main_font_color, 600 44px/54px 'Lato', sans-serif);
+		margin-top: 120px;
+	  }
+
+	  .who_we_are__headline-text
+	  {
+		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
+		margin-top: 20px;
+	  }
+	}
+
+	.who_we_are__merit
+	{
+	  margin-top: 55px;
+
+	  .merit__title
+	  {
+		@include font_style($main_font_color, 600 26px/34px 'Lato', sans-serif);
+		letter-spacing: 1px;
+	  }
+
+	  .merit__text
+	  {
+		@include font_style($main_font_color, 400 15px/24px 'Lato', sans-serif);
+		letter-spacing: 0px;
+		margin-top: 20px;
+	  }
+	}
+  }
+
+  .latest_works
+  {
+	height: 1265px;
+	background-color: rgb(241,245,247);
+
+	.latest_works__headline
+	{
+
+	  .latest_works__headline-title
+	  {
+		@include font_style($main_font_color, 600 44px/54px 'Lato', sans-serif);
+		margin-top: 125px;
+	  }
+
+	  .latest_works__headline-text
+	  {
+		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
+		margin-top: 20px;
+	  }
+	}
+
+	.latest_works__container
+	{
+	  margin-top: 60px;
+
+	  .latest_works__figure
+	  {
+		.figcaption
+		{
+		  height: 110px;
+		  background-color: white;
+
+		  .figcaption_title
+		  {
+			@include font_style($main_font_color, 600 20px/26px 'Lato', sans-serif);
+			padding-top: 25px;
+		  }
+
+		  .figcaption_subheader
+		  {
+			@include font_style($main_font_color, 14px/18px 'Lato', sans-serif);
+		  }
+		}
+	  }
+	}
+
+	.latest_works__carousel
+	{
+	  margin-top: 80px;
+	}
+  }
+
+  .get_in_touch
+  {
+	height: 490px;
+
+	.get_in_touch__container
+	{
+	  .get_in_touch_title
+	  {
+		@include font_style($main_font_color, 600 44px/54px 'Lato', sans-serif);
+		margin-top: 130px;
+	  }
+
+	  .get_in_touch_text
+	  {
+		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
+		margin-top: 15px;
+	  }
+
+	  .get_in_touch__button
+	  {
+		margin: 25px auto 0;
+		display: block;
+		width: 150px;
+		height: 50px;
+		border-radius: 3px;
+		background-color: #00bb9b;
+		cursor: pointer;
+		@include font_style($white_font_color, 700  15px/18px 'Source Sans Pro', sans-serif);
+	  }
+	}
+  }
+}
+
+.footer
+{
+  .footer__container
+  {
+	background-color: #313F52;
+	height: 365px;
+
+	.footer_block
+	{
+	  margin-top: 75px;
+
+	  .footer_block__headline
+	  {
+		@include font_style($white_font_color, 600 16px/22px 'Lato', sans-serif);
+		letter-spacing: 2px;
+	  }
+	}
+
+	.footer_who_we_are
+	{
+	  .footer_who_we_are__logo
+	  {
+		margin-top: 15px;
+	  }
+
+	  .footer_who_we_are__text
+	  {
+		@include font_style($white_font_color, 400 14px/22px 'Lato', sans-serif);
+		margin-top: 20px;
+	  }
+	}
+
+	.footer_get_in_touch
+	{
+	  .footer_get_in_touch__text
+	  {
+		@include font_style($white_font_color, 400 14px/22px 'Lato', sans-serif);
+		margin-top: 15px;
+	  }
+	}
+  }
+}
