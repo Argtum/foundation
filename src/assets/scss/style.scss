@@ -328,8 +328,29 @@
 
 	  .footer_who_we_are__text
 	  {
-		@include font_style($white_font_color, 400 14px/22px 'Lato', sans-serif);
+		@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
 		margin-top: 20px;
+		margin-bottom: 10px;
+	  }
+
+	  .footer_who_we_are__link
+	  {
+		@include font_style(rgb(163,177,191), 600 14px/22px 'Lato', sans-serif);
+		letter-spacing: 1px;
+	  }
+	}
+
+	.footer_latest_works
+	{
+	  .footer_latest_works__bloks-container
+	  {
+		margin-top: 15px;
+
+		.footer_latest_works__bloks
+		{
+		  display: block;
+		  margin: 3px;
+		}
 	  }
 	}
 
@@ -337,8 +358,69 @@
 	{
 	  .footer_get_in_touch__text
 	  {
-		@include font_style($white_font_color, 400 14px/22px 'Lato', sans-serif);
+		@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
 		margin-top: 15px;
+	  }
+
+	  .footer_get_in_touch__coordinate
+	  {
+		@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
+		margin-top: 15px;
+
+		.footer_get_in_touch__coordinate-text
+		{
+		  margin-left: 5px;
+		}
+	  }
+	}
+
+	.footer_free_updates
+	{
+	  .footer_free_updates__text
+	  {
+		@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
+		margin-top: 15px;
+	  }
+
+	  .footer_free_updates__input
+	  {
+		.footer_free_updates__input-field
+		{
+		  @include font_style(rgb(163,177,191), 14px/22px 'Source Sans Pro', sans-serif);
+		  background-color: #505C6C;
+		  border-radius: 3px;
+		  border: none;
+		}
+
+		.footer_free_updates__input-button
+		{
+		  width: 88px;
+		  height: 30px;
+		  border-radius: 3px;
+		  background-color: #00bb9b;
+		  @include font_style($white_font_color, 600 13px/18px 'Source Sans Pro', sans-serif);
+		}
+	  }
+	}
+  }
+
+  .footer_ending
+  {
+	height: 80px;
+	background-color: rgb(41,53,70);
+
+	.footer_ending__copyrighted
+	{
+	  @include font_style(rgb(112,126,140), 14px/22px 'Source Sans Pro', sans-serif);
+	}
+
+	.footer_ending__menu
+	{
+
+
+	  .footer_ending__menu-element
+	  {
+		@include font_style(rgb(112,126,140), 14px/22px 'Source Sans Pro', sans-serif);
 	  }
 	}
   }
