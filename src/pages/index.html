@@ -2,20 +2,18 @@
   <div class="navbar_header__background">
     <div class="navbar_header__container grid-container">
       <div class="navbar_header grid-x">
-        <div class="navbar_header__contact cell large-10 text-left">
-          <img class="navbar_header__contact-image" src="../assets/img/icon-mail-dark.png" alt="mail_dark">
-          <span class="navbar_header__contact-text">info@reen.com</span>
-          <img class="navbar_header__contact-image" src="../assets/img/icon-mobile-dark.png" alt="mail_dark">
-          <span class="navbar_header__contact-text">+00 (123) 456 78 90</span>
-        </div>
-        <div class="navbar_header__social cell large-2 text-left">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-facebook.png" alt="facebook">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-gplus.png" alt="gplus">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-twitter.png" alt="twitter">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-pinterest.png" alt="pinterest">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-behance.png" alt="behance">
-          <img class="navbar_header__social-image" src="../assets/img/icon-s-dribbble.png" alt="dribbble">
-        </div>
+        <ul class="navbar_header__contact menu simple cell large-10 align-left">
+          <li class="navbar_header__contact_mail">info@reen.com<a href="#"></a></li>
+          <li class="navbar_header__contact_phone">+00 (123) 456 78 90<a href="#"></a></li>
+        </ul>
+        <ul class="navbar_header__social menu cell large-2 simple align-right">
+          <li class="navbar_header__social-image navbar_header__social-image-1"><a href="#"></a></li>
+          <li class="navbar_header__social-image navbar_header__social-image-2"><a href="#"></a></li>
+          <li class="navbar_header__social-image navbar_header__social-image-3"><a href="#"></a></li>
+          <li class="navbar_header__social-image navbar_header__social-image-4"><a href="#"></a></li>
+          <li class="navbar_header__social-image navbar_header__social-image-5"><a href="#"></a></li>
+          <li class="navbar_header__social-image navbar_header__social-image-6"><a href="#"></a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -24,7 +22,7 @@
       <div class="navbar__logo cell large-2 text-left">
         <img src="../assets/img/logo_reen_big.png" alt="REEN">
       </div>
-      <ul class="navbar__menu cell large-8 menu simple align-center">
+      <ul class="navbar__menu cell large-8 menu simple">
         <li><a class="navbar__menu-element" href="#">HOME</a></li>
         <li><a class="navbar__menu-element" href="#">PORTFOLIO</a></li>
         <li><a class="navbar__menu-element" href="#">BLOG</a></li>
@@ -91,7 +89,7 @@
           YOUR CREATIVITY
         </h1>
         <p class="hero-carousel__element-text hero-carousel__element-text-4 cell large-8 large-offset-4 text-right">
-          Take a break from messing around with heavy coding and spend your</br>
+          Take a break from messing around with heavy coding and spend your<br>
           time brainstorming ideas for your next project.
         </p>
         <a class="hero-carousel__element-button hero-carousel__element-button-4 button primary position-right" href="#">
@@ -103,21 +101,21 @@
           SHOWCASE<br>YOUR CONTENT
         </h1>
         <p class="hero-carousel__element-text hero-carousel__element-text-5 cell large-8 large-offset-2 text-center">
-          With REEN your have the possibility to create website various</br>
+          With REEN your have the possibility to create website various<br>
           content quickly and easily. Now it's up to you!
         </p>
         <a class="hero-carousel__element-button hero-carousel__element-button-5 button primary" href="#">
           GET STARTED NOW
         </a>
       </div>
-      <div class="hero__pagination"></div>
+      <div class="hero-carousel__pagination cell large-2 large-offset-5 text-center"></div>
     </div>
   </div>
   <div class="who_we_are cell grid-container">
     <div class="who_we_are__headline grid-x">
       <h3 class="who_we_are__headline-title cell large-8 large-offset-2 text-center">Beautiful. Clean. Responsive.</h3>
       <p class="who_we_are__headline-text cell large-8 large-offset-2 text-center">
-        REEN is a high-quality solution for those who want a beautiful website in no time.</br>
+        REEN is a high-quality solution for those who want a beautiful website in no time.<br>
         It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,<br>
         it doesn't matter. Your content will always looks its absolute best.
       </p>
@@ -202,11 +200,12 @@
         </div>
         <div class="latest_works_pagination"></div>
       </div>
-      <div class="latest_works__pagination-container grid-x">
-        <div class="latest_works__pagination cell large-2 large-offset-5 text-center">
-          <img src="../assets/img/indicator_blue.png" alt="blue_indicator">
-          <img src="../assets/img/indicator_green.png" alt="green_indicator">
-          <img src="../assets/img/indicator_blue.png" alt="blue_indicator">
+      <div class="latest_works__pagination-container grid-x align-center">
+        <div class="latest_works__pagination cell large-1 text-center">
+          <img class="latest_works__pagination-indicator" src="../assets/img/indicator_blue.png" alt="blue_indicator">
+          <img class="latest_works__pagination-indicator" src="../assets/img/indicator_green.png" alt="green_indicator">
+          <img class="latest_works__pagination-indicator latest_works__pagination-indicator-3"
+               src="../assets/img/indicator_blue.png" alt="blue_indicator">
         </div>
       </div>
     </div>
@@ -232,7 +231,7 @@
           <p class="footer_who_we_are__text">
             Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
           </p>
-          <a href="#" class="footer_who_we_are__link">More about us <img src="../assets/img/icon-right.png"></a>
+          <a href="#" class="footer_who_we_are__link">More about us</a>
         </div>
         <div class="footer_block footer_latest_works cell large-3">
           <h6 class="footer_block__headline">LATEST WORKS</h6>
@@ -248,14 +247,11 @@
           <p class="footer_get_in_touch__text">
             Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem.
           </p>
-          <div class="footer_get_in_touch__coordinate">
-            <img src="../assets/img/icon-location.png" alt="location">
-            <span class="footer_get_in_touch__coordinate-text">84 Street, City, State 24813</span><br>
-            <img src="../assets/img/icon-mobile.png" alt="mobile">
-            <span class="footer_get_in_touch__coordinate-text">+00 (123) 456 78 90</span><br>
-            <img src="../assets/img/icon-mail.png" alt="mal">
-            <span class="footer_get_in_touch__coordinate-text">info@reen.com</span>
-          </div>
+          <ul class="footer_get_in_touch__coordinate">
+            <li class="footer_get_in_touch__coordinate-text-1"><a href="#"></a>84 Street, City, State 24813</li>
+            <li class="footer_get_in_touch__coordinate-text-2"><a href="#"></a>+00 (123) 456 78 90</li>
+            <li class="footer_get_in_touch__coordinate-text-3"><a href="#"></a>info@reen.com</li>
+          </ul>
         </div>
         <div class="footer_block footer_free_updates cell large-3">
           <h6 class="footer_block__headline">FREE UPDATES</h6>
@@ -276,12 +272,12 @@
       <div class="footer_ending grid-x">
         <p class="footer_ending__copyrighted text-left cell large-8">© 2014 REEN. All rights reserved.</p>
         <ul class="footer_ending__menu cell large-4 menu simple align-right">
-          <li><a class="footer_ending__menu-element" href="#">Home</a></li>
-          <li><a class="footer_ending__menu-element" href="#">Portfolio</a></li>
-          <li><a class="footer_ending__menu-element" href="#">Blog</a></li>
-          <li><a class="footer_ending__menu-element" href="#">About</a></li>
-          <li><a class="footer_ending__menu-element" href="#">Services</a></li>
-          <li><a class="footer_ending__menu-element" href="#">Contact</a></li>
+          <li class="footer_ending__menu-element"><a href="#"></a>Home</li>
+          <li class="footer_ending__menu-element"><a href="#"></a>Portfolio</li>
+          <li class="footer_ending__menu-element"><a href="#"></a>Blog</li>
+          <li class="footer_ending__menu-element"><a href="#"></a>About</li>
+          <li class="footer_ending__menu-element"><a href="#"></a>Services</li>
+          <li class="footer_ending__menu-element footer_ending__menu-element-6"><a href="#"></a>Contact</li>
         </ul>
       </div>
     </div>

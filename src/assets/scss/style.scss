@@ -1,9 +1,7 @@
 @import "reset";
 @import "mixins";
 @import 'settings';
-@import 'foundation';
-
-@include foundation-everything;
+@import '../../../node_modules/foundation-sites/scss/foundation';
 
 .header
 {
@@ -14,34 +12,110 @@
 
 	.navbar_header__container
 	{
-	  padding: 0;
-	  padding-right: 10px;
+	  padding: 0 10px 0 0;
 
 	  .navbar_header
 	  {
 		.navbar_header__contact
 		{
-		  margin-top: 10px;
-
-		  .navbar_header__contact-text
+		  .navbar_header__contact_mail
 		  {
-			@include font_style($main_font_color, 12px/18px 'Source Sans Pro', sans-serif);
-			margin-left: 5px;
+			@include font_style($main_font_color, 12px/20px 'Source Sans Pro', sans-serif);
+			background: url(../img/icon-mail-dark.png) no-repeat 0 50%;
+			margin-left: 15px;
+			padding-left: 20px;
+
+			&:hover
+			{
+			  color: $hover_font_color;
+			  cursor: pointer;
+			  background: url(../img/icon-mail-hover.png) no-repeat 0 50%;
+			}
 		  }
 
-		  .navbar_header__contact-image
+		  .navbar_header__contact_phone
 		  {
-			margin-left: 15px;
+			@include font_style($main_font_color, 12px/20px 'Source Sans Pro', sans-serif);
+			background: url(../img/icon-mobile-dark.png) no-repeat 0 50%;
+			margin-left: 25px;
+			padding-left: 15px;
+
+			&:hover
+			{
+			  color: $hover_font_color;
+			  cursor: pointer;
+			  background: url(../img/icon-mail-hover.png) no-repeat 0 50%;
+			}
 		  }
 		}
 
 		.navbar_header__social
 		{
-		  margin-top: 10px;
-
 		  .navbar_header__social-image
 		  {
-			margin-left: 18px;
+			width: 30px;
+			height: 40px;
+			margin: 0;
+		  }
+
+		  .navbar_header__social-image-1
+		  {
+			background: url(../img/icon-s-facebook.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-facebook_white.png) no-repeat 50% 50% #4567b3;
+			}
+		  }
+
+		  .navbar_header__social-image-2
+		  {
+			background: url(../img/icon-s-gplus.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-gplus_white.png) no-repeat 50% 50% #dd5745;
+			}
+		  }
+
+		  .navbar_header__social-image-3
+		  {
+			background: url(../img/icon-s-twitter.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-twitter_white.png) no-repeat 50% 50% #2fbbed;
+			}
+		  }
+
+		  .navbar_header__social-image-4
+		  {
+			background: url(../img/icon-s-pinterest.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-pinterest_white.png) no-repeat 50% 50% #d94347;
+			}
+		  }
+
+		  .navbar_header__social-image-5
+		  {
+			background: url(../img/icon-s-behance.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-behance_white.png) no-repeat 50% 50% #2f79ff;
+			}
+		  }
+
+		  .navbar_header__social-image-6
+		  {
+			background: url(../img/icon-s-dribbble.png) no-repeat 50% 50%;
+
+			&:hover
+			{
+			  background: url(../img/icon-s-dribbble_white.png) no-repeat 50% 50% #eb6397;
+			}
 		  }
 		}
 	  }
@@ -62,6 +136,7 @@
 	  .navbar__menu
 	  {
 		@include font_style($main_font_color, 600 15px/18px 'Source Sans Pro', sans-serif);
+		margin: 35px 0 0 30px;
 
 		.navbar__menu-element
 		{
@@ -71,7 +146,7 @@
 
 	  .navbar__search
 	  {
-		margin: 45px auto;
+		margin: 50px auto;
 		padding-right: 20px;
 		cursor: pointer;
 	  }
@@ -131,7 +206,7 @@
 
 		.hero-carousel__element-button-1
 		{
-		  margin: 45px auto 0;
+		  margin: 65px auto 0;
 		}
 	  }
 
@@ -247,6 +322,15 @@
 		  margin: 40px auto 0;
 		}
 	  }
+
+	  .hero-carousel__pagination
+	  {
+		margin: 280px auto 0;
+		width: 145px;
+		height: 45px;
+		border-radius: 3px;
+		background-color: #ffffff;
+	  }
 	}
   }
 
@@ -265,13 +349,13 @@
 	  .who_we_are__headline-text
 	  {
 		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
-		margin-top: 20px;
+		margin-top: 25px;
 	  }
 	}
 
 	.who_we_are__merit
 	{
-	  margin-top: 55px;
+	  margin-top: 75px;
 
 	  .merit__title
 	  {
@@ -282,7 +366,7 @@
 	  .merit__text
 	  {
 		@include font_style($main_font_color, 400 15px/24px 'Lato', sans-serif);
-		letter-spacing: 0px;
+		letter-spacing: 0;
 		margin-top: 20px;
 	  }
 	}
@@ -307,13 +391,13 @@
 		.latest_works__headline-text
 		{
 		  @include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
-		  margin-top: 20px;
+		  margin-top: 25px;
 		}
 	  }
 
 	  .latest_works__container
 	  {
-		margin-top: 60px;
+		margin-top: 70px;
 
 		.latest_works__figure
 		{
@@ -325,12 +409,13 @@
 			.figcaption_title
 			{
 			  @include font_style($main_font_color, 600 20px/26px 'Lato', sans-serif);
-			  padding-top: 25px;
+			  padding-top: 30px;
 			}
 
 			.figcaption_subheader
 			{
 			  @include font_style($main_font_color, 14px/18px 'Lato', sans-serif);
+			  margin-top: 10px;
 			}
 		  }
 		}
@@ -343,7 +428,38 @@
 
 	  .latest_works__pagination-container
 	  {
-		margin-top: 40px;
+		margin-top: 35px;
+		line-height: 40px;
+
+		&:before
+		{
+		  content: "";
+		  display: block;
+		  width: 30px;
+		  height: 30px;
+		  border-radius: 3px;
+		  background: url(../img/icon-left-open-mini.png) no-repeat 50% 50% #506a85;
+		}
+
+		&:after
+		{
+		  content: "";
+		  display: block;
+		  width: 30px;
+		  height: 30px;
+		  border-radius: 3px;
+		  background: url(../img/icon-right-open-mini.png) no-repeat 50% 50% #506a85;
+		}
+
+		.latest_works__pagination-indicator
+		{
+		  margin-right: 5px;
+		}
+
+		.latest_works__pagination-indicator-3
+		{
+		  margin-right: 0;
+		}
 	  }
 	}
   }
@@ -363,12 +479,12 @@
 	  .get_in_touch_text
 	  {
 		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
-		margin-top: 15px;
+		margin-top: 25px;
 	  }
 
 	  .get_in_touch__button
 	  {
-		margin: 25px auto 0;
+		margin: 35px auto 0;
 		display: block;
 		width: 150px;
 		height: 50px;
@@ -394,7 +510,8 @@
 	  {
 		.footer_block
 		{
-		  margin-top: 75px;
+		  margin-top: 70px;
+		  padding: 0;
 
 		  .footer_block__headline
 		  {
@@ -407,7 +524,7 @@
 		{
 		  .footer_who_we_are__logo
 		  {
-			margin-top: 15px;
+			margin-top: 25px;
 		  }
 
 		  .footer_who_we_are__text
@@ -421,6 +538,12 @@
 		  {
 			@include font_style(rgb(163,177,191), 600 14px/22px 'Lato', sans-serif);
 			letter-spacing: 1px;
+
+			&:hover
+			{
+			  color: $hover_font_color;
+			  cursor: pointer;
+			}
 		  }
 		}
 
@@ -428,7 +551,7 @@
 		{
 		  .footer_latest_works__bloks-container
 		  {
-			margin-top: 15px;
+			margin: 20px 0 0 0;
 
 			.footer_latest_works__bloks
 			{
@@ -443,17 +566,53 @@
 		  .footer_get_in_touch__text
 		  {
 			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
-			margin-top: 15px;
+			margin-top: 20px;
 		  }
 
 		  .footer_get_in_touch__coordinate
 		  {
-			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
 			margin-top: 15px;
 
-			.footer_get_in_touch__coordinate-text
+			.footer_get_in_touch__coordinate-text-1
 			{
-			  margin-left: 5px;
+			  padding-left: 20px;
+			  @include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
+			  background: url(../img/icon-location.png) no-repeat 0 50%;
+
+			  &:hover
+			  {
+				color: $hover_font_color;
+				cursor: pointer;
+				background: url(../img/icon-mail-hover.png) no-repeat 0 50%;
+			  }
+			}
+
+			.footer_get_in_touch__coordinate-text-2
+			{
+			  padding-left: 20px;
+			  @include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
+			  background: url(../img/icon-mobile.png) no-repeat 0 50%;
+
+			  &:hover
+			  {
+				color: $hover_font_color;
+				cursor: pointer;
+				background: url(../img/icon-mail-hover.png) no-repeat 0 50%;
+			  }
+			}
+
+			.footer_get_in_touch__coordinate-text-3
+			{
+			  padding-left: 20px;
+			  @include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
+			  background: url(../img/icon-mail.png) no-repeat 0 50%;
+
+			  &:hover
+			  {
+				color: $hover_font_color;
+				cursor: pointer;
+				background: url(../img/icon-mail-hover.png) no-repeat 0 50%;
+			  }
 			}
 		  }
 		}
@@ -463,11 +622,13 @@
 		  .footer_free_updates__text
 		  {
 			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
-			margin-top: 15px;
+			margin-top: 20px;
 		  }
 
 		  .footer_free_updates__input
 		  {
+			margin-top: 20px;
+
 			.footer_free_updates__input-field
 			{
 			  @include font_style(rgb(163,177,191), 14px/22px 'Source Sans Pro', sans-serif);
@@ -507,11 +668,23 @@
 
 		.footer_ending__menu
 		{
-		  padding-top: 15px;
+		  padding-top: 30px;
 
 		  .footer_ending__menu-element
 		  {
 			@include font_style(rgb(112,126,140), 14px/22px 'Source Sans Pro', sans-serif);
+			margin-right: 5px;
+
+			&:hover
+			{
+			  color: $hover_font_color;
+			  cursor: pointer;
+			}
+		  }
+
+		  .footer_ending__menu-element-6
+		  {
+			margin-right: 0;
 		  }
 		}
 	  }

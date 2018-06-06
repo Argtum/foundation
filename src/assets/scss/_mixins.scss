@@ -1,5 +1,6 @@
 $white_font_color: rgb(255,255,255);
 $main_font_color: rgb(80,106,133);
+$hover_font_color: rgb(60, 187, 155);
 
 @mixin font_style($color, $fonts...)
 {
@@ -9,6 +10,5 @@ $main_font_color: rgb(80,106,133);
 
 @mixin hero-carousel__element_background($elem_num)
 {
-	background: url(../img/hero-carousel__element_background-#{$elem_num}.png) no-repeat 0 0;
-	background-position: 50% 0;
+	background: url(../img/hero-carousel__element_background-#{$elem_num}.png) no-repeat 50% 0;
 }
