@@ -20,7 +20,7 @@
 		{
 		  .navbar_header__contact_mail
 		  {
-			@include font_style($main_font_color, 12px/20px 'Source Sans Pro', sans-serif);
+			@include font_style($main_font_color, 700 12px/20px 'Source Sans Pro', sans-serif);
 			background: url(../img/icon-mail-dark.png) no-repeat 0 50%;
 			margin-left: 15px;
 			padding-left: 20px;
@@ -35,7 +35,7 @@
 
 		  .navbar_header__contact_phone
 		  {
-			@include font_style($main_font_color, 12px/20px 'Source Sans Pro', sans-serif);
+			@include font_style($main_font_color, 700 12px/20px 'Source Sans Pro', sans-serif);
 			background: url(../img/icon-mobile-dark.png) no-repeat 0 50%;
 			margin-left: 25px;
 			padding-left: 15px;
@@ -135,12 +135,11 @@
 
 	  .navbar__menu
 	  {
-		@include font_style($main_font_color, 600 15px/18px 'Source Sans Pro', sans-serif);
-		margin: 35px 0 0 30px;
+		margin: 35px 0 0 20px;
 
 		.navbar__menu-element
 		{
-		  margin-left: 25px;
+		  @include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
 		}
 	  }
 
@@ -342,7 +341,7 @@
 	{
 	  .who_we_are__headline-title
 	  {
-		@include font_style($main_font_color, 600 44px/54px 'Lato', sans-serif);
+		@include font_style($main_font_color, 700 44px/54px 'Lato', sans-serif);
 		margin-top: 120px;
 	  }
 
@@ -357,17 +356,35 @@
 	{
 	  margin-top: 75px;
 
-	  .merit__title
+	  .who_we_are__merit-icon-1
 	  {
-		@include font_style($main_font_color, 600 26px/34px 'Lato', sans-serif);
-		letter-spacing: 1px;
+		background: url(../img/icon_heart_empty.png) no-repeat 50% 0;
 	  }
 
-	  .merit__text
+	  .who_we_are__merit-icon-2
 	  {
-		@include font_style($main_font_color, 400 15px/24px 'Lato', sans-serif);
-		letter-spacing: 0;
-		margin-top: 20px;
+		background: url(../img/icon_lamp_empty.png) no-repeat 50% 0;
+	  }
+
+	  .who_we_are__merit-icon-3
+	  {
+		background: url(../img/icon_star_empty.png) no-repeat 50% 0;
+	  }
+
+	  .who_we_are__merit-quality
+	  {
+		.merit__title
+		{
+		  @include font_style($main_font_color, 700 26px/34px 'Lato', sans-serif);
+		  letter-spacing: 1px;
+		}
+
+		.merit__text
+		{
+		  @include font_style($main_font_color, 15px/24px 'Lato', sans-serif);
+		  letter-spacing: 0;
+		  margin-top: 20px;
+		}
 	  }
 	}
   }
@@ -515,8 +532,8 @@
 
 		  .footer_block__headline
 		  {
-			@include font_style($white_font_color, 600 16px/22px 'Lato', sans-serif);
-			letter-spacing: 2px;
+			@include font_style($white_font_color, 600 17px/24px 'Lato', sans-serif);
+			letter-spacing: 1px;
 		  }
 		}
 
@@ -524,21 +541,20 @@
 		{
 		  .footer_who_we_are__logo
 		  {
-			margin-top: 25px;
+			margin-top: 20px;
 		  }
 
 		  .footer_who_we_are__text
 		  {
 			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
-			margin-top: 20px;
-			margin-bottom: 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 		  }
 
 		  .footer_who_we_are__link
 		  {
-			@include font_style(rgb(163,177,191), 600 14px/22px 'Lato', sans-serif);
+			@include font_style(rgb(163,177,191), 900 14px/22px 'Lato', sans-serif);
 			letter-spacing: 1px;
-
 			&:hover
 			{
 			  color: $hover_font_color;
@@ -556,7 +572,21 @@
 			.footer_latest_works__bloks
 			{
 			  display: block;
-			  margin: 3px;
+			}
+
+			.footer_latest_works__bloks-1
+			{
+			  margin: 0 5px 5px 0;
+			}
+
+			.footer_latest_works__bloks-2
+			{
+			  margin: 0 0 5px 0;
+			}
+
+			.footer_latest_works__bloks-3
+			{
+			  margin: 0 5px 0 0;
 			}
 		  }
 		}
@@ -566,7 +596,7 @@
 		  .footer_get_in_touch__text
 		  {
 			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
-			margin-top: 20px;
+			margin-top: 15px;
 		  }
 
 		  .footer_get_in_touch__coordinate
@@ -622,16 +652,16 @@
 		  .footer_free_updates__text
 		  {
 			@include font_style(rgb(163,177,191), 400 14px/22px 'Lato', sans-serif);
-			margin-top: 20px;
+			margin-top: 15px;
 		  }
 
 		  .footer_free_updates__input
 		  {
-			margin-top: 20px;
+			margin-top: 15px;
 
 			.footer_free_updates__input-field
 			{
-			  @include font_style(rgb(163,177,191), 14px/22px 'Source Sans Pro', sans-serif);
+			  @include font_style(rgb(163,177,191), 400 14px/22px 'Source Sans Pro', sans-serif);
 			  background-color: #505C6C;
 			  border-radius: 3px;
 			  border: none;
