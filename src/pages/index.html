@@ -20,7 +20,7 @@
   <div class="navbar__container grid-container">
     <div class="navbar grid-x">
       <div class="navbar__logo cell large-2 text-left">
-        <img src="../assets/img/logo_reen_big.png" alt="REEN">
+        <img src="{{root}}assets/img/logo_reen_big.png" alt="REEN">
       </div>
       <ul class="navbar__menu cell large-8 menu simple">
         <li class="navbar__menu-element navbar__menu-element_home"><a href="#"></a>HOME
@@ -42,12 +42,12 @@
               <div class="mega-menu__block mega-menu__focus-on cell large-3 text-left">
                 <h6 class="mega-menu__block_headline">FOCUS ON</h6>
                 <div class="mega-menu__focus-on_image">
-                  <img class="mega-menu__focus-on_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__focus-on_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <p class="mega-menu__block_text mega-menu__focus-on_text">
                   Consed quodips ameniat empernam que apid cust molor eatis numa estio.
                 </p>
-                <a class="mega-menu__focus-on_button text-center" href="#">VIEV PROJECT</a>
+                <a class="mega-menu__focus-on_button text-center button primary" href="#">VIEV PROJECT</a>
               </div>
               <div class="mega-menu__block mega-menu__speciale-page cell large-3 text-left">
                 <h6 class="mega-menu__block_headline">SPECIALE PAGES</h6>
@@ -68,22 +68,22 @@
               <div class="mega-menu__block mega-menu__latest-works cell large-3">
                 <h6 class="mega-menu__block_headline mega-menu__latest-works_headline">LATEST WORKS</h6>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-1">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-2">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-3">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-4">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-5">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
                 <div class="mega-menu__latest-works_image mega-menu__latest-works_image-6">
-                  <img class="mega-menu__latest-works_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+                  <img class="mega-menu__latest-works_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
                 </div>
               </div>
               <div class="mega-menu__block mega-menu__about-us cell large-3 text-left">
@@ -93,7 +93,7 @@
                   volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.<br><br>
                   Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
                 </p>
-                <a class="mega-menu__about-us_button text-center" href="#">READ MORE</a>
+                <a class="mega-menu__about-us_button text-center button primary" href="#">READ MORE</a>
               </div>
             </div>
           </div>
@@ -105,89 +105,94 @@
   </div>
 </header>
 <div class="main">
-  <div class="hero-carousel__background">
-    <div class="hero-carousel__nav-button hero-carousel__nav-button_left"></div>
-    <div class="hero-carousel__nav-button hero-carousel__nav-button_right"></div>
-    <div class="hero-carousel grid-container">
-      <div class="hero-carousel__element hero-carousel__element-1 grid-x">
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-1 cell large-10 large-offset-1 text-center">
-          MADE FOR DESIGNERS
-        </h1>
-        <p class="hero-carousel__element-text hero-carousel__element-text-1 cell large-10 large-offset-1 text-center">
-          Create your portfolio in minutes with the professionally and lovingly designed REEN<br>
-          website template. Customize your site with versatile and easy to use futures.
-        </p>
-        <a class="hero-carousel__element-button hero-carousel__element-button-1 button primary text-center" href="#">
-          GET STARTED NOW
-        </a>
+  <div class="hero-carousel__container orbit" role="region" data-orbit>
+    <div class="hero-carousel__wrapper orbit-wrapper">
+      <div class="hero-carousel__controls orbit-cotrols">
+        <button class="orbit-previous">
+          <img class="hero-carousel__nav-button_left" src="{{root}}assets/img/icon-left-open-maxi.png">
+        </button>
+        <button class="orbit-next">
+          <img class="hero-carousel__nav-button_right" src="{{root}}assets/img/icon-right-open-maxi.png">
+        </button>
       </div>
-      <div class="hero-carousel__element hero-carousel__element-2 grid-x grid-y">
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-2 cell large-9 large-offset-3 text-right">
-          FRESH AND<br>BEAUTIFUL DESIGN
-        </h1>
-        <p class="hero-carousel__element-text hero-carousel__element-text-2 cell large-9 large-offset-3 text-right">
-          REEN is designed to showcase your talent and put your work in the forefront.<br>
-          Professionally use of typography and layout that fits your content.
-        </p>
-        <a class="hero-carousel__element-button hero-carousel__element-button-2 button primary position-right" href="#">
-          GET STARTED NOW
-        </a>
-      </div>
-      <div class="hero-carousel__element hero-carousel__element-3 grid-x">
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-3-1 cell large-6 text-left">
-          CLEAN AND
-        </h1>
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-3-2 cell large-7 text-left">
-          REUSABLE CODE
-        </h1>
-        <p class="hero-carousel__element-text hero-carousel__element-text-3 cell large-8 text-left">
-          The clean code allows you to easily copy code blocks from content<br>
-          modules and past them in different places or layouts.
-        </p>
-        <a class="hero-carousel__element-button hero-carousel__element-button-3 button primary position-left" href="#">
-          GET STARTED NOW
-        </a>
-      </div>
-      <div class="hero-carousel__element hero-carousel__element-4 grid-x">
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-4-1 cell large-7 large-offset-5 text-right">
-          JUST FOCUS ON
-        </h1>
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-4-2 cell large-8 large-offset-4 text-right">
-          YOUR CREATIVITY
-        </h1>
-        <p class="hero-carousel__element-text hero-carousel__element-text-4 cell large-8 large-offset-4 text-right">
-          Take a break from messing around with heavy coding and spend your<br>
-          time brainstorming ideas for your next project.
-        </p>
-        <a class="hero-carousel__element-button hero-carousel__element-button-4 button primary position-right" href="#">
-          GET STARTED NOW
-        </a>
-      </div>
-      <div class="hero-carousel__element hero-carousel__element-5 grid-x grid-y">
-        <h1 class="hero-carousel__element-title hero-carousel__element-title-5 cell large-8 large-offset-2 text-center">
-          SHOWCASE<br>YOUR CONTENT
-        </h1>
-        <p class="hero-carousel__element-text hero-carousel__element-text-5 cell large-8 large-offset-2 text-center">
-          With REEN your have the possibility to create website various<br>
-          content quickly and easily. Now it's up to you!
-        </p>
-        <a class="hero-carousel__element-button hero-carousel__element-button-5 button primary" href="#">
-          GET STARTED NOW
-        </a>
-      </div>
-      <div class="hero-carousel__pagination cell large-2 large-offset-5 text-center">
-        <img class="hero-carousel__pagination-indicator hero-carousel__pagination-indicator-1"
-             src="../assets/img/indicator_green.png" alt="green_indicator">
-        <img class="hero-carousel__pagination-indicator hero-carousel__pagination-indicator-2"
-             src="../assets/img/indicator_blue.png" alt="blue_indicator">
-        <img class="hero-carousel__pagination-indicator hero-carousel__pagination-indicator-3"
-             src="../assets/img/indicator_blue.png" alt="blue_indicator">
-        <img class="hero-carousel__pagination-indicator hero-carousel__pagination-indicator-4"
-             src="../assets/img/indicator_blue.png" alt="blue_indicator">
-        <img class="hero-carousel__pagination-indicator hero-carousel__pagination-indicator-5"
-             src="../assets/img/indicator_blue.png" alt="blue_indicator">
-      </div>
+      <ul class="hero-carousel orbit-container">
+        <li class=" hero-carousel__element hero-carousel__element-1 is-active orbit-slide text-center">
+          <div class="hero-carousel__element-container hero-carousel__element-container-1">
+            <h1 class="hero-carousel__element-title hero-carousel__element-title-1">MADE FOR DESIGNERS</h1>
+			<p class="hero-carousel__element-text hero-carousel__element-text-1">
+			  Create your portfolio in minutes with the professionally and lovingly designed REEN<br>
+			  website template. Customize your site with versatile and easy to use futures.
+			</p>
+			<a class="hero-carousel__element-button hero-carousel__element-button-1 button primary" href="#">
+			  GET STARTED NOW
+			</a>
+          </div>
+        </li>
+        <li class="hero-carousel__element hero-carousel__element-2 orbit-slide">
+          <div class="hero-carousel__element-container hero-carousel__element-container-2">
+            <div class="hero-carousel__element_block-2 grid-container text-right">
+              <h1 class="hero-carousel__element-title hero-carousel__element-title-2">FRESH AND<br>BEAUTIFUL DESIGN</h1>
+              <p class="hero-carousel__element-text hero-carousel__element-text-2">
+                REEN is designed to showcase your talent and put your work in the forefront.<br>
+                Professionally use of typography and layout that fits your content.
+              </p>
+              <a class="hero-carousel__element-button hero-carousel__element-button-2 button primary" href="#">
+                GET STARTED NOW
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="hero-carousel__element hero-carousel__element-3 orbit-slide">
+          <div class="hero-carousel__element-container hero-carousel__element-container-3">
+            <div class="hero-carousel__element_block-3 grid-container text-left">
+              <h1 class="hero-carousel__element-title hero-carousel__element-title-3-1">CLEAN AND</h1>
+              <h1 class="hero-carousel__element-title hero-carousel__element-title-3-2">REUSABLE CODE</h1>
+              <p class="hero-carousel__element-text hero-carousel__element-text-3">
+                The clean code allows you to easily copy code blocks from content<br>
+                modules and past them in different places or layouts.
+              </p>
+              <a class="hero-carousel__element-button hero-carousel__element-button-3 button primary" href="#">
+                GET STARTED NOW
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="hero-carousel__element hero-carousel__element-4 orbit-slide">
+          <div class="hero-carousel__element-container hero-carousel__element-container-4">
+            <div class="hero-carousel__element_block-4 grid-container text-right">
+              <h1 class="hero-carousel__element-title hero-carousel__element-title-4-1">JUST FOCUS ON</h1>
+              <h1 class="hero-carousel__element-title hero-carousel__element-title-4-2">YOUR CREATIVITY</h1>
+              <p class="hero-carousel__element-text hero-carousel__element-text-4">
+                Take a break from messing around with heavy coding and spend your<br>
+                time brainstorming ideas for your next project.
+              </p>
+              <a class="hero-carousel__element-button hero-carousel__element-button-4 button primary" href="#">
+                GET STARTED NOW
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="hero-carousel__element hero-carousel__element-5 orbit-slide">
+          <div class="hero-carousel__element-container hero-carousel__element-container-5 text-center">
+            <h1 class="hero-carousel__element-title hero-carousel__element-title-5">SHOWCASE<br>YOUR CONTENT</h1>
+            <p class="hero-carousel__element-text hero-carousel__element-text-5">
+              With REEN your have the possibility to create website various<br>
+              content quickly and easily. Now it's up to you!
+            </p>
+            <a class="hero-carousel__element-button hero-carousel__element-button-5 button primary" href="#">
+              GET STARTED NOW
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
+    <nav class="hero-carousel__pagination orbit-bullets">
+      <button class="hero-carousel__pagination-indicator is-active" data-slide="0"></button>
+      <button class="hero-carousel__pagination-indicator" data-slide="1"></button>
+      <button class="hero-carousel__pagination-indicator" data-slide="2"></button>
+      <button class="hero-carousel__pagination-indicator" data-slide="3"></button>
+      <button class="hero-carousel__pagination-indicator" data-slide="4"></button>
+    </nav>
   </div>
   <div class="who_we_are cell grid-container">
     <div class="who_we_are__headline grid-x">
@@ -245,7 +250,7 @@
       <div class="latest_works__container grid-x grid-margin-x">
         <div class="latest_works__figure latest_works__figure-1 cell large-6 text-center">
           <div class="figure_picture figure_picture-1 text-center">
-            <img class="figure_picture_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+            <img class="figure_picture_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
           </div>
           <div class="figcaption">
             <h6 class="figcaption_title">Grand Motel gets an identity brushup</h6>
@@ -254,7 +259,7 @@
         </div>
         <div class="latest_works__figure latest_works__figure-2 cell large-6 text-center">
           <div class="figure_picture figure_picture-2 text-center">
-            <img class="figure_picture_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+            <img class="figure_picture_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
           </div>
           <div class="figcaption">
             <h6 class="figcaption_title">Fresh branding for a creative startup</h6>
@@ -262,32 +267,34 @@
           </div>
         </div>
       </div>
-      <div class="latest_works__carousel grid-x grid-margin-x">
-        <div class="latest_works__element latest_works__element-1 cell large-3">
-          <img class="latest_works__element_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+
+      <div class="latest_works__carousel orbit" role="region" data-orbit>
+        <div class="latest_works__wrapper orbit-wrapper">
+          <div class="latest_works__controls orbit-cotrols">
+            <button class="orbit-previous">
+              <img class="latest_works__nav-button_left" src="{{root}}assets/img/icon-left-open-mini.png">
+            </button>
+            <button class="orbit-next">
+              <img class="latest_works__nav-button_right" src="{{root}}assets/img/icon-right-open-mini.png">
+            </button>
+          </div>
+          <ul class="latest_works__carousel orbit-container">
+            <li class=" latest_works__element latest_works__element-1 is-active orbit-slide text-center">
+
+            </li>
+            <li class="latest_works__element latest_works__element-2 orbit-slide">
+
+            </li>
+            <li class="latest_works__element latest_works__element-3 orbit-slide">
+
+            </li>
+          </ul>
         </div>
-        <div class="latest_works__element latest_works__element-2 cell large-3">
-          <img class="latest_works__element_plus" src="../assets/img/icon-plus.png" alt="put you slide">
-        </div>
-        <div class="latest_works__element latest_works__element-3 cell large-3">
-          <img class="latest_works__element_plus" src="../assets/img/icon-plus.png" alt="put you slide">
-        </div>
-        <div class="latest_works__element latest_works__element-4 cell large-3">
-          <img class="latest_works__element_plus" src="../assets/img/icon-plus.png" alt="put you slide">
-        </div>
-        <div class="latest_works_pagination"></div>
-      </div>
-      <div class="latest_works__pagination-container grid-x align-center">
-        <div class="latest_works__nav-button latest_works__nav-button_left"></div>
-        <div class="latest_works__pagination-indicator text-center">
-          <img class="latest_works__pagination-indicator_left" src="../assets/img/indicator_blue.png"
-               alt="blue_indicator">
-          <img class="latest_works__pagination-indicator_center" src="../assets/img/indicator_green.png"
-               alt="green_indicator">
-          <img class="latest_works__pagination-indicator_right" src="../assets/img/indicator_blue.png"
-               alt="blue_indicator">
-        </div>
-        <div class="latest_works__nav-button latest_works__nav-button_right"></div>
+        <nav class="latest_works__pagination orbit-bullets">
+          <button class="latest_works__pagination-indicator is-active" data-slide="0"></button>
+          <button class="latest_works__pagination-indicator" data-slide="1"></button>
+          <button class="latest_works__pagination-indicator" data-slide="2"></button>
+        </nav>
       </div>
     </div>
   </div>
@@ -308,7 +315,7 @@
       <div class="footer__info grid-x grid-margin-x grid-padding-x">
         <div class="footer_block footer_who_we_are cell large-3 text-left">
           <h6 class="footer_block__headline footer_who_we_are_headline">WHO WE ARE</h6>
-          <img class="footer_who_we_are__logo" src="../assets/img/logo_reen.png" alt="Reen">
+          <img class="footer_who_we_are__logo" src="{{root}}assets/img/logo_reen.png" alt="Reen">
           <p class="footer_who_we_are__text">
             Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
             Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
@@ -319,16 +326,16 @@
           <h6 class="footer_block__headline">LATEST WORKS</h6>
           <div class="footer_latest_works__blocks-container grid-x grid-margin-x">
             <div class="footer_latest_works__blocks footer_latest_works__blocks-1">
-              <img class="footer_latest_works__block_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+              <img class="footer_latest_works__block_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
             </div>
             <div class="footer_latest_works__blocks footer_latest_works__blocks-2">
-              <img class="footer_latest_works__block_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+              <img class="footer_latest_works__block_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
             </div>
             <div class="footer_latest_works__blocks footer_latest_works__blocks-3">
-              <img class="footer_latest_works__block_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+              <img class="footer_latest_works__block_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
             </div>
             <div class="footer_latest_works__blocks footer_latest_works__blocks-4">
-              <img class="footer_latest_works__block_plus" src="../assets/img/icon-plus.png" alt="put you slide">
+              <img class="footer_latest_works__block_plus" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
             </div>
           </div>
         </div>
@@ -353,7 +360,7 @@
             <input class="footer_free_updates__input-field input-group-field"
                    type="text" placeholder="Enter your email address"/>
             <div class="input-group-button">
-              <input type="submit" value="SUBSCRIBE" class=" button footer_free_updates__input-button text-center"/>
+              <input type="submit" value="SUBSCRIBE" class="footer_free_updates__input-button text-center button primary"/>
             </div>
           </div>
         </div>
@@ -377,5 +384,5 @@
   </div>
 </footer>
 <div class="btn-scrollup">
-  <img src="../assets/img/icon-up-open-mini.png">
+  <img src="{{root}}assets/img/icon-up-open-mini.png">
 </div>
