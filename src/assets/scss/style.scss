@@ -152,8 +152,9 @@
 		  {
 			box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
 			background-color: #f5f7f9;
-			border: 1px solid #e5e9ed;
+			border: 1px solid red;//#e5e9ed;
 			color: $hover_font_color;
+			border-bottom: none;
 			z-index: 2;
 
 			.mega-menu__container
@@ -187,7 +188,9 @@
 			  line-height: 50px;
 			  margin: 0;
 			  padding-left: 20px;
-			  border-bottom: 1px solid #e5e9ed;
+			  border: 1px solid #e5e9ed;
+			  border-bottom: none;
+			  z-index: 1;
 
 			  &:hover
 			  {
@@ -197,14 +200,9 @@
 			  }
 			}
 
-			.home__menu_element-1
-			{
-			  border: 1px solid #e5e9ed;
-			}
-
 			.home__menu_element-5
 			{
-			  border: none;
+			  border-bottom: 1px solid #e5e9ed;
 			}
 		  }
 		}
@@ -768,109 +766,85 @@
 			}
 		  }
 		}
-	  }
 
-	  .latest_works__carousel
-	  {
-		margin-top: 80px;
-
-		.latest_works__element
+		.latest_works__carousel-container
 		{
-		  float: left;
+		  margin-top: 80px;
 
-		  .latest_works__element-image
+		  .latest_works__wrapper
 		  {
-			width: 270px;
-			height: 185px;
-			cursor: pointer;
-			float: left;
-			margin-right: 30px;
-
-			.latest_works__element-headline
+			.latest_works_controls
 			{
-			  display: none;
-			  margin-top: 70px;
-			  @include font_style($white_font_color, 700 16px/22px 'Lato', sans-serif);
-
-			  .latest_works__element-subheader
+			  .latest_works__nav-button
 			  {
-				@include font_style($white_font_color, 14px/18px 'Lato', sans-serif);
-				margin-top: 10px;
+				width: 30px;
+				height: 30px;
+				border-radius: 3px;
+				cursor: pointer;
 			  }
 			}
 
-			&:hover
+			.latest_works__carousel
 			{
-			  background: 0 -185px rgba(60, 187, 155, 0.9);
-
-			  .latest_works__element-headline
+			  .latest_works__element
 			  {
-				display: block;
+				float: left;
+
+				.latest_works__element-image
+				{
+				  width: 270px;
+				  height: 185px;
+				  cursor: pointer;
+				  float: left;
+				  margin-right: 30px;
+
+				  .latest_works__element-headline
+				  {
+					display: none;
+					margin-top: 70px;
+					@include font_style($white_font_color, 700 16px/22px 'Lato', sans-serif);
+
+					.latest_works__element-subheader
+					{
+					  @include font_style($white_font_color, 14px/18px 'Lato', sans-serif);
+					  margin-top: 10px;
+					}
+				  }
+
+				  &:hover
+				  {
+					background: 0 -185px rgba(60, 187, 155, 0.9);
+
+					.latest_works__element-headline
+					{
+					  display: block;
+					}
+				  }
+				}
+
+				.latest_works__element-image-1
+				{
+				  background: url(../img/simpli_nota.png) no-repeat 0 0;
+				}
+
+				.latest_works__element-image-2
+				{
+				  background: url(../img/record.png) no-repeat 0 0;
+				}
+
+				.latest_works__element-image-3
+				{
+				  background: url(../img/astor.png) no-repeat 0 0;
+				}
+
+				.latest_works__element-image-4
+				{
+				  background: url(../img/signwall.png) no-repeat 0 0;
+				  margin-right: 0;
+				}
 			  }
 			}
 		  }
-
-		  .latest_works__element-image-1
-		  {
-			background: url(../img/simpli_nota.png) no-repeat 0 0;
-		  }
-
-		  .latest_works__element-image-2
-		  {
-			background: url(../img/record.png) no-repeat 0 0;
-		  }
-
-		  .latest_works__element-image-3
-		  {
-			background: url(../img/astor.png) no-repeat 0 0;
-		  }
-
-		  .latest_works__element-image-4
-		  {
-			background: url(../img/signwall.png) no-repeat 0 0;
-			margin-right: 0;
-		  }
-		}
-	  }
-
-	  .latest_works__pagination-container
-	  {
-		margin-top: 35px;
-		line-height: 40px;
-
-		.latest_works__nav-button
-		{
-		  width: 30px;
-		  height: 30px;
-		  border-radius: 3px;
-		  cursor: pointer;
-		}
-
-		.latest_works__nav-button_left
-		{
-		  background: url(../img/icon-left-open-mini.png) no-repeat 50% 50% #CAD2DA;
-		  margin-right: 15px;
-
-		  &:hover
-		  {
-			background: url(../img/icon-left-open-mini_hover.png) no-repeat 50% 50% #506a85;
-		  }
-		}
-
-		.latest_works__nav-button_right
-		{
-		  background: url(../img/icon-right-open-mini.png) no-repeat 50% 50% #CAD2DA;
-		  margin-left: 15px;
-
-		  &:hover
-		  {
-			background: url(../img/icon-right-open-mini_hover.png) no-repeat 50% 50% #506a85;
-		  }
-		}
-
-		.latest_works__pagination-indicator_left, .latest_works__pagination-indicator_center
-		{
-		  margin-right: 5px;
 		}
 	  }
 	}
