@@ -248,7 +248,7 @@
 				  width: 240px;
 				  height: 164px;
 				  margin-top: 25px;
-				  background: url(../img/faint_phone.png) no-repeat 0 0;
+				  background: url(../img/faint_phone.jpg) no-repeat 0 0;
 				  cursor: pointer;
 
 				  .plus_icon
@@ -615,9 +615,12 @@
 		  border-radius: 3px;
 		  background-color: #ffffff;
 
-		  .hero-carousel__pagination-indicator
+		  .hero-carousel__bullets
 		  {
-			cursor: pointer;
+			.hero-carousel__pagination-indicator
+			{
+			  cursor: pointer;
+			}
 		  }
 		}
 	  }
