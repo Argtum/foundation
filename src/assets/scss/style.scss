@@ -7,17 +7,21 @@
 {
   .navbar_header__background
   {
-	height: 40px;
+	min-height: 40px;
 	background-color: rgb(245,247,249);
 
 	.navbar_header__container
 	{
-	  padding: 0 10px 0 0;
+	  padding: 0;
 
 	  .navbar_header
 	  {
 		.navbar_header__contact
 		{
+		  line-height: 40px;
+		  float: left;
+		  margin-right: auto;
+
 		  .navbar_header__contact_mail
 		  {
 			@include font_style($main_font_color, 700 12px/20px 'Source Sans Pro', sans-serif);
@@ -44,13 +48,14 @@
 
 		.navbar_header__social
 		{
-		  padding-right: 3px;
+		  margin-left: auto;
+		  line-height: 40px;
 
 		  .navbar_header__social-image
 		  {
 			width: 30px;
 			height: 40px;
-			margin: 0;
+			float: left;
 		  }
 
 		  .navbar_header__social-image-1
@@ -121,10 +126,12 @@
   {
 	.navbar
 	{
-	  height: 110px;
+	  min-height: 110px;
 
 	  .navbar__logo
 	  {
+		height: 40px;
+		margin: 35px 0;
 		background: url(../img/logo_reen_big.png) no-repeat 0 50%;
 		cursor: pointer;
 
@@ -134,9 +141,20 @@
 		}
 	  }
 
+	  .navbar__search
+	  {
+		width: 15px;
+		height: 15px;
+		background: url(../img/icon-search.png) no-repeat 50% 50%;
+		margin: 50px 0 50px auto;
+		cursor: pointer;
+	  }
+
+
 	  .navbar__menu
 	  {
 		margin-left: 35px;
+		float: left;
 
 		.navbar__menu-element
 		{
@@ -154,7 +172,6 @@
 			background-color: #f5f7f9;
 			border: 1px solid #e5e9ed;
 			color: $hover_font_color;
-			border-bottom: none;
 			z-index: 2;
 
 			.mega-menu__container
@@ -212,7 +229,7 @@
 		  .mega-menu__container
 		  {
 			width: 1170px;
-			height: 420px;
+			min-height: 420px;
 			box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
 			background-color: #f5f7f9;
 			border: 1px solid #e5e9ed;
@@ -400,9 +417,13 @@
 		width: 15px;
 		height: 15px;
 		background: url(../img/icon-search.png) no-repeat 50% 50%;
-		margin: 50px 20px 50px auto;
-		padding-right: 20px;
+		margin: 50px 0 50px auto;
 		cursor: pointer;
+	  }
+
+	  .navbar__search-medium
+	  {
+		display: none;
 	  }
 	}
   }
@@ -920,7 +941,7 @@
 
   .who_we_are
   {
-	height: 670px;
+	min-height: 670px;
 
 	.who_we_are__headline
 	{
@@ -941,23 +962,11 @@
 	{
 	  margin-top: 75px;
 
-	  .who_we_are__merit-icon-1
-	  {
-		background: url(../img/icon_heart_empty.png) no-repeat 50% 0;
-	  }
-
-	  .who_we_are__merit-icon-2
-	  {
-		background: url(../img/icon_lamp_empty.png) no-repeat 50% 0;
-	  }
-
-	  .who_we_are__merit-icon-3
-	  {
-		background: url(../img/icon_star_empty.png) no-repeat 50% 0;
-	  }
-
 	  .who_we_are__merit-quality
 	  {
+		padding-left: 120px;
+		margin-bottom: 50px;
+
 		.merit__title
 		{
 		  @include font_style($main_font_color, 700 26px/34px 'Lato', sans-serif);
@@ -971,12 +980,27 @@
 		  margin-top: 20px;
 		}
 	  }
+
+	  .who_we_are__merit-quality-1
+	  {
+		background: url(../img/icon_heart_empty.png) no-repeat 30px 5px;
+	  }
+
+	  .who_we_are__merit-quality-2
+	  {
+		background: url(../img/icon_lamp_empty.png) no-repeat 30px 5px;
+	  }
+
+	  .who_we_are__merit-quality-3
+	  {
+		background: url(../img/icon_star_empty.png) no-repeat 30px 5px;
+	  }
 	}
   }
 
   .latest_works__background
   {
-	height: 1265px;
+	min-height: 1265px;
 	background-color: rgb(241,245,247);
 
 	.latest_works
@@ -1005,9 +1029,10 @@
 		{
 		  .figure_picture
 		  {
-			width: 570px;
+			max-width: 570px;
 			height: 390px;
 			cursor: pointer;
+			margin-top: 50px;
 
 			.plus_icon
 			{
@@ -1038,8 +1063,9 @@
 
 		  .figcaption
 		  {
-			height: 110px;
+			min-height: 110px;
 			background-color: white;
+			max-width: 570px;
 
 			.figcaption_title
 			{
@@ -1057,6 +1083,7 @@
 			{
 			  @include font_style($main_font_color, 14px/18px 'Lato', sans-serif);
 			  margin-top: 10px;
+			  padding-bottom: 10px;
 			}
 		  }
 		}
@@ -1146,7 +1173,7 @@
 
   .get_in_touch
   {
-	height: 490px;
+	min-height: 490px;
 
 	.get_in_touch__container
 	{
@@ -1159,12 +1186,12 @@
 	  .get_in_touch_text
 	  {
 		@include font_style($main_font_color, 21px/33px 'Lato', sans-serif);
-		margin-top: 25px;
+		margin: 25px 200px 0;
 	  }
 
 	  .get_in_touch__button
 	  {
-		margin: 35px auto 0;
+		margin: 35px auto 20px;
 		display: block;
 		width: 150px;
 		height: 50px;
@@ -1181,16 +1208,20 @@
   .footer__background
   {
 	background-color: #313F52;
-	height: 365px;
+	min-height: 365px;
 
 	.footer__container
 	{
 	  .footer__info
 	  {
+		padding-bottom: 50px;
+
 		.footer_block
 		{
 		  margin-top: 70px;
 		  padding: 0;
+		  max-width: 270px;
+		  width: 100%;
 
 		  .footer_block__headline
 		  {
@@ -1346,6 +1377,7 @@
 		  .footer_free_updates__input
 		  {
 			margin-top: 15px;
+			height: 40px;
 
 			.footer_free_updates__input-field
 			{
@@ -1357,6 +1389,8 @@
 
 			.footer_free_updates__input-button
 			{
+			  position: absolute;
+			  margin: 5px 0 0 -93px;
 			  width: 88px;
 			  height: 30px;
 			  border-radius: 3px;
@@ -1370,7 +1404,7 @@
 
   .footer_ending__background
   {
-	height: 80px;
+	min-height: 80px;
 	background-color: rgb(41,53,70);
 
 	.footer_ending__container
@@ -1386,6 +1420,7 @@
 		.footer_ending__menu
 		{
 		  padding-top: 30px;
+		  padding-bottom: 30px;
 
 		  .footer_ending__menu-element
 		  {
@@ -1440,5 +1475,310 @@
   &:hover
   {
 	background: url(../img/icon-up-open-mini-hover.png) no-repeat 50% 50%, #506a85;
+  }
+}
+
+@media screen
+{
+  @media (max-width: 1220px)
+  {
+	.header
+	{
+	  .navbar__container
+	  {
+		.navbar__menu
+		{
+		  .navbar__menu-element
+		  {
+
+		  }
+		}
+	  }
+	}
+
+	.footer
+	{
+	  .footer__background
+	  {
+		.footer__container
+		{
+		  .footer__info
+		  {
+			max-width: 800px;
+			margin: 0 auto;
+
+			.footer_block
+			{
+			  max-width: 370px;
+			  margin: 30px auto;
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  @media (min-width: 1023px) and (max-width: 1220px)
+  {
+	.main
+	{
+	  .latest_works__background
+	  {
+		.latest_works
+		{
+		  .latest_works__container
+		  {
+			margin-top: 70px;
+
+			.latest_works__figure
+			{
+			  .figure_picture
+			  {
+				margin: 50px auto 0;
+				height: 322px;
+				max-width: 470px;
+				cursor: pointer;
+
+				.plus_icon
+				{
+				  opacity: 0;
+				  margin-top: 161px;
+				}
+
+				&:hover
+				{
+				  background: 0 -322px rgba(60, 187, 155, 0.9);
+
+				  .plus_icon
+				  {
+					opacity: 1;
+				  }
+				}
+			  }
+
+			  .figure_picture-1
+			  {
+				background: url(../img/grand_motel_medium.png) no-repeat 0 0;
+			  }
+
+			  .figure_picture-2
+			  {
+				background: url(../img/brand_medium.png) no-repeat 0 0;
+			  }
+
+			  .figcaption
+			  {
+				max-width: 470px;
+				margin: auto;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  @media (max-width: 1023px)
+  {
+	.header
+	{
+	  .navbar__container
+	  {
+		.navbar
+		{
+		  .navbar__search-medium
+		  {
+			display: block;
+		  }
+
+		  .navbar__menu
+		  {
+			margin: 0 auto;
+		  }
+
+		  .navbar__search-large
+		  {
+			display: none;
+		  }
+		}
+	  }
+	}
+
+	.main
+	{
+	  .get_in_touch
+	  {
+		.get_in_touch__container
+		{
+		  .get_in_touch_text
+		  {
+			margin: 25px 0 0;
+		  }
+		}
+	  }
+
+	  .latest_works__background
+	  {
+		.latest_works
+		{
+		  .latest_works__container
+		  {
+			.latest_works__figure
+			{
+			  .figure_picture
+			  {
+				margin: 50px auto 0;
+			  }
+
+			  .figcaption
+			  {
+				margin: 0 auto;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  @media (max-width: 850px)
+  {
+	.footer
+	{
+	  .footer__background
+	  {
+		.footer__container
+		{
+		  .footer__info
+		  {
+			max-width: 600px;
+
+			.footer_block
+			{
+			  max-width: 270px;
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  @media (max-width: 640px)
+  {
+	.header
+	{
+	  .navbar_header__background
+	  {
+		.navbar_header__container
+		{
+		  .navbar_header
+		  {
+			.navbar_header__contact
+			{
+			  float: none;
+			  margin: 0 auto;
+			}
+
+			.navbar_header__social
+			{
+			  float: none;
+			  margin: 0 auto;
+			}
+		  }
+		}
+	  }
+	}
+
+	.main
+	{
+	  .latest_works__background
+	  {
+		.latest_works
+		{
+		  .latest_works__container
+		  {
+			margin-top: 0;
+
+			.latest_works__figure
+			{
+			  .figure_picture
+			  {
+				margin: 50px auto 0;
+				height: 191px;
+				max-width: 280px;
+				cursor: pointer;
+
+				.plus_icon
+				{
+				  opacity: 0;
+				  margin-top: 96px;
+				}
+
+				&:hover
+				{
+				  background: 0 -191px rgba(60, 187, 155, 0.9);
+
+				  .plus_icon
+				  {
+					opacity: 1;
+				  }
+				}
+			  }
+
+			  .figure_picture-1
+			  {
+				background: url(../img/grand_motel_small.png) no-repeat 0 0;
+			  }
+
+			  .figure_picture-2
+			  {
+				background: url(../img/brand_small.png) no-repeat 0 0;
+			  }
+
+			  .figcaption
+			  {
+				max-width: 280px;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+
+	.footer
+	{
+	  .footer__background
+	  {
+		.footer__container
+		{
+		  .footer__info
+		  {
+			max-width: 800px;
+
+			.footer_block
+			{
+			  max-width: 370px;
+			}
+		  }
+		}
+	  }
+
+	  .footer_ending__background
+	  {
+		.footer_ending__container
+		{
+		  .footer_ending
+		  {
+			.footer_ending__menu
+			{
+			  .footer_ending__menu-element
+			  {
+				margin-bottom: 50px;
+			  }
+			}
+		  }
+		}
+	  }
+	}
   }
 }
