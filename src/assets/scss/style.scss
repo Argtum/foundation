@@ -156,12 +156,28 @@
 		margin-left: 35px;
 		float: left;
 
+		.btn-scrollUp
+		{
+		  display: block;
+		  width: 40px;
+		  height: 40px;
+		  border-radius: 3px;
+		  position: fixed;
+		  right: 20px;
+		  bottom: 20px;
+		  cursor: pointer;
+		  background: url(../img/icon-up-open-mini.png) no-repeat 50% 50%, #506a85;
+		  z-index: 3;
+
+		  &:hover
+		  {
+			background: url(../img/icon-up-open-mini-hover.png) no-repeat 50% 50%, #506a85;
+		  }
+		}
+
 		.navbar__menu-element
 		{
-		  @include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
 		  cursor: pointer;
-		  height: 50px;
-		  line-height: 50px;
 		  padding: 0 21px;
 		  margin-left: 0;
 		  position: static;
@@ -171,8 +187,12 @@
 			box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
 			background-color: #f5f7f9;
 			border: 1px solid #e5e9ed;
-			color: $hover_font_color;
 			z-index: 2;
+
+			.navbar__menu-link
+			{
+			  color: $hover_font_color;
+			}
 
 			.mega-menu__container
 			{
@@ -184,6 +204,14 @@
 			  display: block;
 			}
 		  }
+
+		  .navbar__menu-link
+		  {
+			@include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
+			height: 50px;
+			line-height: 50px;
+		  }
+
 		}
 
 		.navbar__menu-element_home
@@ -1459,23 +1487,6 @@
 		}
 	  }
 	}
-  }
-}
-
-.btn-scrollUp
-{
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  cursor: pointer;
-  background: url(../img/icon-up-open-mini.png) no-repeat 50% 50%, #506a85;
-
-  &:hover
-  {
-	background: url(../img/icon-up-open-mini-hover.png) no-repeat 50% 50%, #506a85;
   }
 }
 
