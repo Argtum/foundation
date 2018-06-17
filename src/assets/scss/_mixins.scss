@@ -10,5 +10,5 @@ $hover_font_color: rgb(60, 187, 155);
 
 @mixin hero-carousel__element_background($elem_num)
 {
-	background: url(../img/hero-carousel__element_background-#{$elem_num}.png) no-repeat 0 0;
+	background: url(../img/hero-carousel__element_background-#{$elem_num}.jpg) no-repeat 0 0;
 }

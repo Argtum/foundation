@@ -3,6 +3,88 @@
 @import 'settings';
 @import '../../../node_modules/foundation-sites/scss/foundation';
 
+.canvas-navbar__container
+{
+  .canvas-navbar
+  {
+	min-height: 50px;
+
+	.canvas-navbar__logo
+	{
+	  height: 50px;
+	  line-height: 50px;
+	  background: url(../img/logo_reen_small.png) no-repeat 0 50%;
+	  cursor: pointer;
+
+	  &:hover
+	  {
+		background: url(../img/logo_reen_small_hover.png) no-repeat 0 50%;
+	  }
+	}
+
+	.canvas-navbar__search
+	{
+	  width: 15px;
+	  height: 15px;
+	  background: url(../img/icon-search.png) no-repeat 50% 50%;
+	  margin: 20px 0 20px auto;
+	  cursor: pointer;
+	}
+
+	.canvas-navbar__menu
+	{
+	  margin: 0 auto;
+
+	  .canvas-navbar__menu-element
+	  {
+		cursor: pointer;
+		padding: 0 21px;
+		float: left;
+
+		&:hover
+		{
+		  box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
+		  background-color: #f5f7f9;
+		  border: 1px solid #e5e9ed;
+		  z-index: 2;
+
+		  .canvas-navbar__menu-link
+		  {
+			color: $hover_font_color;
+		  }
+		}
+
+		.canvas-navbar__menu-link
+		{
+		  @include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
+		  height: 50px;
+		  line-height: 50px;
+		}
+	  }
+	}
+
+	.canvas-navbar__menu-3
+	{
+	  display: none;
+
+	  .canvas-navbar__menu-element
+	  {
+		float: none;
+	  }
+	}
+  }
+}
+
+.hamburger-menu
+{
+  width: 30px;
+  height: 30px;
+  background: url(../img/hamburger_menu.svg) no-repeat 50% 50%;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+
 .header
 {
   .navbar_header__background
@@ -50,6 +132,7 @@
 		{
 		  margin-left: auto;
 		  line-height: 40px;
+		  margin-right: 15px;
 
 		  .navbar_header__social-image
 		  {
@@ -150,30 +233,10 @@
 		cursor: pointer;
 	  }
 
-
 	  .navbar__menu
 	  {
 		margin-left: 35px;
 		float: left;
-
-		.btn-scrollUp
-		{
-		  display: block;
-		  width: 40px;
-		  height: 40px;
-		  border-radius: 3px;
-		  position: fixed;
-		  right: 20px;
-		  bottom: 20px;
-		  cursor: pointer;
-		  background: url(../img/icon-up-open-mini.png) no-repeat 50% 50%, #506a85;
-		  z-index: 3;
-
-		  &:hover
-		  {
-			background: url(../img/icon-up-open-mini-hover.png) no-repeat 50% 50%, #506a85;
-		  }
-		}
 
 		.navbar__menu-element
 		{
@@ -254,6 +317,9 @@
 
 		.navbar__menu-element_mega-menu
 		{
+		  border-color: #f5f7f9;
+		  border-collapse: collapse;
+
 		  .mega-menu__container
 		  {
 			width: 1170px;
@@ -268,6 +334,7 @@
 			display: none;
 			cursor: auto;
 			z-index: 1;
+			margin-top: -1px;
 
 			.mega-menu
 			{
@@ -385,36 +452,36 @@
 				.mega-menu__latest-works_image-1
 				{
 				  margin: 0 5px 5px 0;
-				  background: url(../img/latest_work_1_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_1_small.jpg) no-repeat 0 0;
 				}
 
 				.mega-menu__latest-works_image-2
 				{
 				  margin: 0 0 5px 0;
-				  background: url(../img/latest_work_2_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_2_small.jpg) no-repeat 0 0;
 				}
 
 				.mega-menu__latest-works_image-3
 				{
 				  margin: 0 5px 5px 0;
-				  background: url(../img/latest_work_3_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_3_small.jpg) no-repeat 0 0;
 				}
 
 				.mega-menu__latest-works_image-4
 				{
 				  margin: 0 0 5px 0;
-				  background: url(../img/latest_work_4_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_4_small.jpg) no-repeat 0 0;
 				}
 
 				.mega-menu__latest-works_image-5
 				{
 				  margin: 0 5px 0 0;
-				  background: url(../img/latest_work_5_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_5_mm.jpg) no-repeat 0 0;
 				}
 
 				.mega-menu__latest-works_image-6
 				{
-				  background: url(../img/latest_work_6_mm.png) no-repeat 0 0;
+				  background: url(../img/latest_work_6_mm.jpg) no-repeat 0 0;
 				}
 			  }
 
@@ -445,7 +512,7 @@
 		width: 15px;
 		height: 15px;
 		background: url(../img/icon-search.png) no-repeat 50% 50%;
-		margin: 50px 0 50px auto;
+		margin: 50px 20px 50px auto;
 		cursor: pointer;
 	  }
 
@@ -453,297 +520,6 @@
 	  {
 		display: none;
 	  }
-	}
-  }
-}
-
-.navbar__container
-{
-  .canvas-navbar
-  {
-	width: 1920px;
-	height: 50px;
-	box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
-	background-color: #ffffff;
-
-	.navbar__logo
-	{
-	  background: url(../img/logo_reen_small.png) no-repeat 0 50%;
-	  cursor: pointer;
-
-	  &:hover
-	  {
-		background: url(../img/logo_reen_small_hover.png) no-repeat 0 50%;
-	  }
-	}
-
-	.navbar__menu
-	{
-	  .navbar__menu-element
-	  {
-		@include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
-		cursor: pointer;
-		height: 50px;
-		line-height: 50px;
-		padding: 0 21px;
-		margin-left: 0;
-		position: static;
-
-		&:hover
-		{
-		  box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
-		  background-color: #f5f7f9;
-		  border: 1px solid #e5e9ed;
-		  color: $hover_font_color;
-		  border-bottom: none;
-		  z-index: 2;
-
-		  .mega-menu__container
-		  {
-			display: block;
-		  }
-
-		  .home__menu_container
-		  {
-			display: block;
-		  }
-		}
-	  }
-
-	  .navbar__menu-element_home
-	  {
-		.home__menu_container
-		{
-		  position: absolute;
-		  background-color: #f5f7f9;
-		  border-radius: 3px;
-		  left: 0;
-		  display: none;
-		  z-index: 1;
-
-		  .home__menu_element
-		  {
-			@include font_style($main_font_color, 700 15px/18px 'Source Sans Pro', sans-serif);
-			width: 210px;
-			height: 50px;
-			line-height: 50px;
-			margin: 0;
-			padding-left: 20px;
-			border: 1px solid #e5e9ed;
-			border-bottom: none;
-			z-index: 1;
-
-			&:hover
-			{
-			  border-radius: 3px;
-			  background-color: #00bb9b;
-			  color: $white_font_color;
-			}
-		  }
-
-		  .home__menu_element-5
-		  {
-			border-bottom: 1px solid #e5e9ed;
-		  }
-		}
-	  }
-
-	  .navbar__menu-element_mega-menu
-	  {
-		.mega-menu__container
-		{
-		  width: 1170px;
-		  height: 420px;
-		  box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
-		  background-color: #f5f7f9;
-		  border: 1px solid #e5e9ed;
-		  padding: 0 40px;
-		  left: -230px;
-		  position: absolute;
-		  border-radius: 3px;
-		  display: none;
-		  cursor: auto;
-		  z-index: 1;
-
-		  .mega-menu
-		  {
-			.mega-menu__block
-			{
-			  .mega-menu__block_headline
-			  {
-				@include font_style($main_font_color, 900 16px/22px 'Lato', sans-serif);
-				letter-spacing: 1px;
-				margin-top: 30px;
-			  }
-
-			  .mega-menu__block_text
-			  {
-				@include font_style($main_font_color, 600 14px/22px 'Source Sans Pro', sans-serif);
-			  }
-			}
-
-			.mega-menu__focus-on
-			{
-			  .mega-menu__focus-on_image
-			  {
-				width: 240px;
-				height: 164px;
-				margin-top: 25px;
-				background: url(../img/faint_phone.jpg) no-repeat 0 0;
-				cursor: pointer;
-
-				.plus_icon
-				{
-				  opacity: 0;
-				  margin-top: 75px;
-				}
-
-				&:hover
-				{
-				  background: 0 -165px rgba(60, 187, 155, 0.9);
-
-				  .plus_icon
-				  {
-					opacity: 1;
-				  }
-				}
-			  }
-
-			  .mega-menu__focus-on_text
-			  {
-				margin-top: 25px;
-			  }
-
-			  .mega-menu__focus-on_button
-			  {
-				display: block;
-				@include font_style($white_font_color, 700 14px/44px 'Source Sans Pro', sans-serif);
-				width: 133px;
-				height: 44px;
-				border-radius: 3px;
-				margin-top: 30px;
-			  }
-			}
-
-			.mega-menu__speciale-page
-			{
-			  .mega-menu__speciale-page_menu
-			  {
-				margin: 20px 0 0;
-
-				.mega-menu__speciale-page_menu-element
-				{
-				  margin: 5px 0 0 0;
-				  padding-left: 20px;
-				  background: url(../img/circle-list-item.png) no-repeat 0 50%;
-				  @include font_style($main_font_color, 600 14px/22px 'Source Sans Pro', sans-serif);
-				  cursor: pointer;
-
-				  &:hover
-				  {
-					color: $hover_font_color;
-				  }
-				}
-			  }
-			}
-
-			.mega-menu__latest-works
-			{
-			  .mega-menu__latest-works_headline
-			  {
-				margin-bottom: 25px;
-			  }
-
-			  .mega-menu__latest-works_image
-			  {
-				width: 118px;
-				height: 80px;
-				cursor: pointer;
-				float: left;
-
-				.plus_icon
-				{
-				  opacity: 0;
-				  margin-top: 30px;
-				}
-
-				&:hover
-				{
-				  background: 0 -81px rgba(60, 187, 155, 0.9);
-
-				  .plus_icon
-				  {
-					opacity: 1;
-				  }
-				}
-			  }
-
-			  .mega-menu__latest-works_image-1
-			  {
-				margin: 0 5px 5px 0;
-				background: url(../img/latest_work_1_mm.png) no-repeat 0 0;
-			  }
-
-			  .mega-menu__latest-works_image-2
-			  {
-				margin: 0 0 5px 0;
-				background: url(../img/latest_work_2_mm.png) no-repeat 0 0;
-			  }
-
-			  .mega-menu__latest-works_image-3
-			  {
-				margin: 0 5px 5px 0;
-				background: url(../img/latest_work_3_mm.png) no-repeat 0 0;
-			  }
-
-			  .mega-menu__latest-works_image-4
-			  {
-				margin: 0 0 5px 0;
-				background: url(../img/latest_work_4_mm.png) no-repeat 0 0;
-			  }
-
-			  .mega-menu__latest-works_image-5
-			  {
-				margin: 0 5px 0 0;
-				background: url(../img/latest_work_5_mm.png) no-repeat 0 0;
-			  }
-
-			  .mega-menu__latest-works_image-6
-			  {
-				background: url(../img/latest_work_6_mm.png) no-repeat 0 0;
-			  }
-			}
-
-			.mega-menu__about-us
-			{
-			  .mega-menu__about-us_text
-			  {
-				margin-top: 20px;
-			  }
-
-			  .mega-menu__about-us_button
-			  {
-				display: block;
-				@include font_style($white_font_color, 700 14px/44px 'Source Sans Pro', sans-serif);
-				width: 115px;
-				height: 44px;
-				border-radius: 3px;
-				margin-top: 30px;
-			  }
-			}
-		  }
-		}
-	  }
-	}
-
-	.navbar__search
-	{
-	  width: 15px;
-	  height: 15px;
-	  background: url(../img/icon-search.png) no-repeat 50% 50%;
-	  margin: 20px 20px 50px auto;
-	  padding-right: 20px;
-	  cursor: pointer;
 	}
   }
 }
@@ -1081,12 +857,12 @@
 
 		  .figure_picture-1
 		  {
-			background: url(../img/grand_motel.png) no-repeat 0 0;
+			background: url(../img/grand_motel.jpg) no-repeat 0 0;
 		  }
 
 		  .figure_picture-2
 		  {
-			background: url(../img/brand.png) no-repeat 0 0;
+			background: url(../img/brand.jpg) no-repeat 0 0;
 		  }
 
 		  .figcaption
@@ -1174,22 +950,22 @@
 
 				.latest_works__element-image-1
 				{
-				  background: url(../img/simpli_nota.png) no-repeat 0 0;
+				  background: url(../img/simpli_nota.jpg) no-repeat 0 0;
 				}
 
 				.latest_works__element-image-2
 				{
-				  background: url(../img/record.png) no-repeat 0 0;
+				  background: url(../img/record.jpg) no-repeat 0 0;
 				}
 
 				.latest_works__element-image-3
 				{
-				  background: url(../img/astor.png) no-repeat 0 0;
+				  background: url(../img/astor.jpg) no-repeat 0 0;
 				}
 
 				.latest_works__element-image-4
 				{
-				  background: url(../img/signwall.png) no-repeat 0 0;
+				  background: url(../img/signwall.jpg) no-repeat 0 0;
 				  margin-right: 0;
 				}
 			  }
@@ -1331,24 +1107,24 @@
 			.footer_latest_works__image-1
 			{
 			  margin: 0 5px 5px 0;
-			  background: url(../img/latest_work_1_small.png) no-repeat 0 0;
+			  background: url(../img/latest_work_1_small.jpg) no-repeat 0 0;
 			}
 
 			.footer_latest_works__image-2
 			{
 			  margin: 0 0 5px 0;
-			  background: url(../img/latest_work_2_small.png) no-repeat 0 0;
+			  background: url(../img/latest_work_2_small.jpg) no-repeat 0 0;
 			}
 
 			.footer_latest_works__image-3
 			{
 			  margin: 0 5px 0 0;
-			  background: url(../img/latest_work_3_small.png) no-repeat 0 0;
+			  background: url(../img/latest_work_3_small.jpg) no-repeat 0 0;
 			}
 
 			.footer_latest_works__image-4
 			{
-			  background: url(../img/latest_work_4_small.png) no-repeat 0 0;
+			  background: url(../img/latest_work_4_small.jpg) no-repeat 0 0;
 			}
 		  }
 		}
@@ -1490,24 +1266,29 @@
   }
 }
 
+.btn-scrollUp
+{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  background: url(../img/icon-up-open-mini.png) no-repeat 50% 50%, #506a85;
+  z-index: 3;
+
+  &:hover
+  {
+	background: url(../img/icon-up-open-mini-hover.png) no-repeat 50% 50%, #506a85;
+  }
+}
+
 @media screen
 {
   @media (max-width: 1220px)
   {
-	.header
-	{
-	  .navbar__container
-	  {
-		.navbar__menu
-		{
-		  .navbar__menu-element
-		  {
-
-		  }
-		}
-	  }
-	}
-
 	.main
 	{
 	  .latest_works__background
@@ -1579,6 +1360,34 @@
 
   @media (min-width: 1023px) and (max-width: 1220px)
   {
+	.header
+	{
+	  .navbar__container
+	  {
+		.navbar
+		{
+		  .navbar__menu
+		  {
+			.navbar__menu-element
+			{
+			  .mega-menu__container
+			  {
+				padding: 0 auto;
+
+				.mega-menu
+				{
+				  .mega-menu__block
+				  {
+					float: none;
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+
 	.main
 	{
 	  .latest_works__background
@@ -1615,16 +1424,6 @@
 				}
 			  }
 
-			  .figure_picture-1
-			  {
-				background: url(../img/grand_motel_medium.png) no-repeat 0 0;
-			  }
-
-			  .figure_picture-2
-			  {
-				background: url(../img/brand_medium.png) no-repeat 0 0;
-			  }
-
 			  .figcaption
 			  {
 				max-width: 470px;
@@ -1637,7 +1436,7 @@
 	}
   }
 
-  @media (max-width: 1023px)
+  @media (min-width: 1023px) and (max-width: 1220px)
   {
 	.header
 	{
@@ -1645,22 +1444,37 @@
 	  {
 		.navbar
 		{
-		  .navbar__search-medium
-		  {
-			display: block;
-		  }
-
 		  .navbar__menu
 		  {
-			margin: 0 auto;
-		  }
-
-		  .navbar__search-large
-		  {
-			display: none;
+			.navbar__menu-element
+			{
+			  .mega-menu__container
+			  {
+				.mega-menu
+				{
+				  .mega-menu__block
+				  {
+					margin: 0;
+				  }
+				}
+			  }
+			}
 		  }
 		}
 	  }
+	}
+  }
+
+  @media (max-width: 1023px)
+  {
+	.hamburger-menu
+	{
+	  display: block;
+	}
+
+	.header
+	{
+	  display: none;
 	}
 
 	.main
@@ -1773,26 +1587,18 @@
 
   @media (max-width: 640px)
   {
-	.header
+	.canvas-navbar__container
 	{
-	  .navbar_header__background
+	  .canvas-navbar
 	  {
-		.navbar_header__container
+		.canvas-navbar__menu-1, .canvas-navbar__menu-2
 		{
-		  .navbar_header
-		  {
-			.navbar_header__contact
-			{
-			  float: none;
-			  margin: 0 auto;
-			}
+		  display: none;
+		}
 
-			.navbar_header__social
-			{
-			  float: none;
-			  margin: 0 auto;
-			}
-		  }
+		.canvas-navbar__menu-3
+		{
+		  display: block;
 		}
 	  }
 	}
@@ -1858,16 +1664,6 @@
 					opacity: 1;
 				  }
 				}
-			  }
-
-			  .figure_picture-1
-			  {
-				background: url(../img/grand_motel_small.png) no-repeat 0 0;
-			  }
-
-			  .figure_picture-2
-			  {
-				background: url(../img/brand_small.png) no-repeat 0 0;
 			  }
 
 			  .figcaption
