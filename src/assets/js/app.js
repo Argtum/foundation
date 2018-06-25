@@ -6,21 +6,21 @@ window.$ = $;
 import Foundation from 'foundation-sites';
 
 $(window).on('load', function (){
-	$(document).foundation();
+    $(document).foundation();
 
-	let menu = [['#homeButton', '#homeMenu'], ['#megaButton', '#megaMenu']];
+    let menu = [['#homeButton', '#homeMenu'], ['#megaButton', '#megaMenu']];
 
-	for (let i = 0; i < menu.length; i++) {
-		let hoveredButton = menu[i][0];
-		let openedMenu = menu[i][1];
+    for (let i = 0; i < menu.length; i++) {
+        let hoveredButton = menu[i][0];
+        let openedMenu = menu[i][1];
 
-		$([hoveredButton, openedMenu].join()).hover(function() {
-			$(openedMenu).css('display', 'block');
-			$(hoveredButton).addClass('hovered');
-		},
-			function () {
-			$(openedMenu).css('display', 'none');
-			$(hoveredButton).removeClass('hovered');
-		});
-	}
+        $([hoveredButton, openedMenu].join()).hover(function() {
+            $(openedMenu).show();
+            $(hoveredButton).addClass('hovered');
+        },
+        function () {
+            $(openedMenu).hide();
+            $(hoveredButton).removeClass('hovered');
+        });
+    }
 });

@@ -1,12 +1,8 @@
-$white_font_color: rgb(255,255,255);
-$main_font_color: rgb(80,106,133);
-$hover_font_color: rgb(60, 187, 155);
-
-@mixin font_style($color, $fonts...)
-{
-	font: $fonts;
-	color: $color;
-}
+$white_font_color: #fff;
+$main_font_color: #506a85;
+$hover_font_color: #3cbb9b;
+$footer_font_color: #a3b1bf;
+$footer_ending_font_color: #707e8c;
 
 @mixin hero-carousel__element_background($elem_num)
 {
