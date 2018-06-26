@@ -3,8 +3,3 @@ $main_font_color: #506a85;
 $hover_font_color: #3cbb9b;
 $footer_font_color: #a3b1bf;
 $footer_ending_font_color: #707e8c;
-
-@mixin hero-carousel__element_background($elem_num)
-{
-	background: url(../img/hero-carousel__element_background-#{$elem_num}.jpg) no-repeat 0 0;
-}
