@@ -5,10 +5,34 @@ window.$ = $;
 
 import Foundation from 'foundation-sites';
 
+function registerHover(button, menu)
+{
+    let hoverItem = $([button, menu]);
+
+    $(hoverItem).each(function () {
+        $(this).hover(openMenu, closeMenu);
+    });
+
+    function openMenu()
+    {
+
+    }
+
+    function closeMenu()
+    {
+
+    }
+}
+
 $(window).on('load', function (){
     $(document).foundation();
 
-    let menu = [['#homeButton', '#homeMenu'], ['#megaButton', '#megaMenu']];
+    registerHover("#homeButton", "#homeMenu");
+    registerHover("#megaButton", "#megaMenu");
+});
+
+/*
+ let menu = [['#homeButton', '#homeMenu'], ['#megaButton', '#megaMenu']];
 
     for (let i = 0; i < menu.length; i++) {
         let hoveredButton = menu[i][0];
@@ -23,4 +47,4 @@ $(window).on('load', function (){
             $(hoveredButton).removeClass('hovered');
         });
     }
-});
+ */
