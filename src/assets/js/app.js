@@ -13,14 +13,24 @@ function registerHover(button, menu)
         $(this).hover(openMenu, closeMenu);
     });
 
+    $(menu).hover(hoverMenu, unHoverMenu);
+
     function openMenu()
     {
-
+        $(menu).show();
     }
 
     function closeMenu()
     {
+        $(menu).hide();
+    }
 
+    function hoverMenu() {
+        button.addClass('hovered');
+    }
+
+    function unHoverMenu() {
+        button.removeClass('hovered');
     }
 }
 

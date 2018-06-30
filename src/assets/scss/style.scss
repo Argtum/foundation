@@ -148,6 +148,7 @@
                         width: 30px;
                         height: 40px;
                         float: left;
+                        cursor: pointer;
                     }
 
                     .navbar_header__social-image-1
@@ -311,7 +312,7 @@
                 position: absolute;
                 background-color: #f5f7f9;
                 border-radius: 3px;
-                left: 358px;
+                left: 598px;
                 top: 123px;
                 display: none;
                 z-index: 1;
@@ -344,20 +345,19 @@
 
             .mega-menu__container
             {
-                width: 1170px;
+                max-width: 1170px;
                 min-height: 420px;
                 box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
                 background-color: #f5f7f9;
                 border: 1px solid #e5e9ed;
                 padding: 0 40px;
-                left: 125px;
+                left: 365px;
                 top: 123px;
                 position: absolute;
                 border-radius: 3px;
                 display: none;
                 cursor: auto;
                 z-index: 1;
-                margin-top: -1px;
 
                 .mega-menu
                 {
