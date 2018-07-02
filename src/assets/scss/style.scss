@@ -17,23 +17,25 @@
 
         .canvas-navbar__logo
         {
-            height: 50px;
+            margin-top: 15px;
+            width: 80px;
+            height: 20px;
             line-height: 50px;
-            background: url("../img/logo_reen_small.png") no-repeat 0 50%;
+            background: url("../img/spritesheet.png") no-repeat -432px -252px;
             cursor: pointer;
 
             &:hover
             {
-                background: url("../img/logo_reen_small_hover.png") no-repeat 0 50%;
+                background: url("../img/spritesheet.png") no-repeat -415px -312px;
             }
         }
 
         .canvas-navbar__search
         {
             display: block;
-            width: 15px;
-            height: 15px;
-            background: url("../img/icon-search.png") no-repeat 50% 50%;
+            width: 12px;
+            height: 12px;
+            background: url("../img/spritesheet.png") no-repeat -380px -220px;
             margin: 20px 0 20px auto;
             cursor: pointer;
         }
@@ -115,15 +117,26 @@
                     {
                         font: 700 12px/20px 'Source Sans Pro', sans-serif;
                         color: $main_font_color;
-                        background: url("../img/icon-mail-dark.png") no-repeat 0 50%;
-                        margin-left: 15px;
-                        padding-left: 20px;
+                        margin-left: 10px;
                         cursor: pointer;
+
+                        .navbar_header__contact_mail-picture
+                        {
+                            margin: 16px 0 0 15px;
+                            width: 11px;
+                            height: 9px;
+                            background: url("../img/spritesheet.png") no-repeat -271px -20px;
+                            float: left;
+                        }
 
                         &:hover
                         {
                             color: $hover_font_color;
-                            background: url("../img/icon-mail-hover.png") no-repeat 0 50%;
+
+                            .navbar_header__contact_mail-picture
+                            {
+                                background: url("../img/spritesheet.png") no-repeat -322px -20px;
+                            }
                         }
                     }
 
@@ -145,69 +158,80 @@
 
                     .navbar_header__social-image
                     {
-                        width: 30px;
-                        height: 40px;
                         float: left;
                         cursor: pointer;
+                        padding: 20px 15px;
                     }
 
                     .navbar_header__social-image-1
                     {
-                        background: url("../img/icon-s-facebook.png") no-repeat 50% 50%;
+                        width: 7px;
+                        height: 13px;
+                        background: url("../img/spritesheet.png") no-repeat -380px -60px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-facebook_white.png") no-repeat 50% 50% #4567b3;
+                            background: url("../img/spritesheet.png") no-repeat -173px -113px #4567b3;
                         }
                     }
 
                     .navbar_header__social-image-2
                     {
-                        background: url("../img/icon-s-gplus.png") no-repeat 50% 50%;
+                        width: 11px;
+                        height: 11px;
+                        background: url("../img/spritesheet.png") no-repeat -115px -157px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-gplus_white.png") no-repeat 50% 50% #dd5745;
+                            background: url("../img/spritesheet.png") no-repeat -222px -157px #dd5745;
                         }
                     }
 
                     .navbar_header__social-image-3
                     {
-                        background: url("../img/icon-s-twitter.png") no-repeat 50% 50%;
+                        width: 11px;
+                        height: 9px;
+                        background: url("../img/spritesheet.png") no-repeat -371px -157px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-twitter_white.png") no-repeat 50% 50% #2fbbed;
+                            background: url("../img/spritesheet.png") no-repeat -166px -205px #2fbbed;
                         }
                     }
 
                     .navbar_header__social-image-4
                     {
-                        background: url("../img/icon-s-pinterest.png") no-repeat 50% 50%;
+                        width: 11px;
+                        height: 9px;
+                        background: url("../img/spritesheet.png") no-repeat -273px -157px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-pinterest_white.png") no-repeat 50% 50% #d94347;
+                            background: url("../img/spritesheet.png") no-repeat -322px -157px #d94347;
                         }
                     }
 
                     .navbar_header__social-image-5
                     {
-                        background: url("../img/icon-s-behance.png") no-repeat 50% 50%;
+                        width: 13px;
+                        height: 10px;
+                        background: url("../img/spritesheet.png") no-repeat -59px -107px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-behance_white.png") no-repeat 50% 50% #2f79ff;
+                            background: url("../img/spritesheet.png") no-repeat -330px -107px #2f79ff;
                         }
                     }
 
                     .navbar_header__social-image-6
                     {
-                        background: url("../img/icon-s-dribbble.png") no-repeat 50% 50%;
+                        width: 12px;
+                        height: 11px;
+                        background: url("../img/spritesheet.png") no-repeat -11px -157px;
 
                         &:hover
                         {
-                            background: url("../img/icon-s-dribbble_white.png") no-repeat 50% 50% #eb6397;
+                            background: url("../img/spritesheet.png") no-repeat -63px -157px #eb6397;
                         }
                     }
                 }
@@ -223,23 +247,24 @@
 
             .navbar__logo
             {
+                width: 161px;
                 height: 40px;
                 margin: 35px 0;
-                background: url("../img/logo_reen_big.png") no-repeat 0 50%;
+                background: url("../img/spritesheet.png") no-repeat -438px -20px;
                 cursor: pointer;
 
                 &:hover
                 {
-                    background: url("../img/logo_reen_big_hover.png") no-repeat 0 50%;
+                    background: url("../img/spritesheet.png") no-repeat -438px -100px;
                 }
             }
 
             .navbar__search
             {
                 display: block;
-                width: 15px;
-                height: 15px;
-                background: url("../img/icon-search.png") no-repeat 50% 50%;
+                width: 12px;
+                height: 12px;
+                background: url("../img/spritesheet.png") no-repeat -380px -220px;
                 margin: 50px 0 50px auto;
                 cursor: pointer;
             }
@@ -405,7 +430,7 @@
                                     height: 44px;
                                     border-radius: 3px;
                                     margin-top: 30px;
-                                    font: 700 14px/22px 'Source Sans Pro', sans-serif;
+                                    font: 700 14px/40px 'Source Sans Pro', sans-serif;
                                 }
                             }
 
@@ -423,6 +448,7 @@
                                         font: 600 14px/22px 'Source Sans Pro', sans-serif;
                                         color: $main_font_color;
                                         cursor: pointer;
+                                        list-style-type: none;
 
                                         &:hover
                                         {
@@ -509,7 +535,7 @@
                                 .mega-menu__about-us_button
                                 {
                                     display: block;
-                                    font: 700 14px/22px 'Source Sans Pro', sans-serif;
+                                    font: 700 14px/40px 'Source Sans Pro', sans-serif;
                                     color: $white_font_color;
                                     width: 115px;
                                     height: 44px;
@@ -533,9 +559,9 @@
 
             .navbar__search
             {
-                width: 15px;
-                height: 15px;
-                background: url("../img/icon-search.png") no-repeat 50% 50%;
+                width: 12px;
+                height: 12px;
+                background: url("../img/spritesheet.png") no-repeat -380px -220px;
                 margin: 50px 20px 50px auto;
                 cursor: pointer;
             }
@@ -795,14 +821,40 @@
         .who_we_are__merits
         {
             margin-top: 75px;
+            margin-bottom: 50px;
 
             .who_we_are__merit-quality
             {
-                padding-left: 120px;
-                margin-bottom: 50px;
+                .merit_picture
+                {
+                    float: left;
+                    margin: 5px 0 0 15px;
+                }
+
+                .merit_picture-1
+                {
+                    width: 61px;
+                    height: 53px;
+                    background: url("../img/spritesheet.png") no-repeat -132px -272px;
+                }
+
+                .merit_picture-2
+                {
+                    width: 46px;
+                    height: 65px;
+                    background: url("../img/spritesheet.png") no-repeat -233px -272px;
+                }
+
+                .merit_picture-3
+                {
+                    width: 56px;
+                    height: 53px;
+                    background: url("../img/spritesheet.png") no-repeat -319px -272px;
+                }
 
                 .merit__title
                 {
+                    padding-left: 120px;
                     font: 700 26px/34px 'Lato', sans-serif;
                     color: $main_font_color;
                     letter-spacing: 1px;
@@ -810,26 +862,12 @@
 
                 .merit__text
                 {
+                    padding-left: 120px;
                     font: 600 15px/24px 'Lato', sans-serif;
                     color: $main_font_color;
                     letter-spacing: 0;
                     margin-top: 20px;
                 }
-            }
-
-            .who_we_are__merit-quality-1
-            {
-                background: url("../img/icon_heart_empty.png") no-repeat 30px 5px;
-            }
-
-            .who_we_are__merit-quality-2
-            {
-                background: url("../img/icon_lamp_empty.png") no-repeat 30px 5px;
-            }
-
-            .who_we_are__merit-quality-3
-            {
-                background: url("../img/icon_star_empty.png") no-repeat 30px 5px;
             }
         }
     }
@@ -1084,12 +1122,12 @@
                         margin-top: 20px;
                         width: 129px;
                         height: 32px;
-                        background: url("../img/logo_reen.png") no-repeat 0 0;
+                        background: url("../img/spritesheet.png") no-repeat -20px -365px;
                         cursor: pointer;
 
                         &:hover
                         {
-                            background: url("../img/logo_reen_hover.png") no-repeat 0 0;
+                            background: url("../img/spritesheet.png") no-repeat -432px -180px;
                         }
                     }
 
@@ -1112,16 +1150,16 @@
                             letter-spacing: 1px;
                             font: 900 14px/22px 'Lato', sans-serif;
                             color: $footer_font_color;
-
-                            &:hover
-                            {
-                              color: $hover_font_color;
-                            }
                         }
 
                         &:hover
                         {
                             background: url("../img/icon-right_hover.png") no-repeat 115px 50%;
+
+                            .footer_who_we_are__link
+                            {
+                                color: $hover_font_color;
+                            }
                         }
                     }
                 }
@@ -1192,36 +1230,62 @@
 
                     .footer_get_in_touch__coordinate
                     {
-                        margin-top: 15px;
+                        margin: 15px 0 0 0;
+                        list-style-type: none;
 
                         .footer_get_in_touch__coordinate-text-1
                         {
-                            padding-left: 20px;
                             font: 600 14px/22px 'Lato', sans-serif;
                             color: $footer_font_color;
-                            background: url("../img/icon-location.png") no-repeat 0 50%;
+
+                            .footer_get_in_touch__coordinate-image-1
+                            {
+                                margin: 5px 15px 0 0;
+                                float: left;
+                                width: 7px;
+                                height: 12px;
+                                background: url("../img/spritesheet.png") no-repeat -173px -20px;
+                            }
                         }
 
                         .footer_get_in_touch__coordinate-text-2
                         {
-                            padding-left: 20px;
                             font: 600 14px/22px 'Lato', sans-serif;
                             color: $footer_font_color;
-                            background: url("../img/icon-mobile.png") no-repeat 0 50%;
+
+                            .footer_get_in_touch__coordinate-image-2
+                            {
+                                margin: 5px 15px 0 0;
+                                float: left;
+                                width: 7px;
+                                height: 13px;
+                                background: url("../img/spritesheet.png") no-repeat -373px -20px;
+                            }
                         }
 
                         .footer_get_in_touch__coordinate-text-3
                         {
-                            padding-left: 20px;
                             font: 600 14px/22px 'Lato', sans-serif;
                             color: $footer_font_color;
-                            background: url("../img/icon-mail.png") no-repeat 0 50%;
                             cursor: pointer;
+
+                            .footer_get_in_touch__coordinate-image-3
+                            {
+                                margin: 7px 15px 0 0;
+                                float: left;
+                                width: 11px;
+                                height: 9px;
+                                background: url("../img/spritesheet.png") no-repeat -220px -20px;
+                            }
 
                             &:hover
                             {
                                 color: $hover_font_color;
-                                background: url("../img/icon-mail-hover.png") no-repeat 0 50%;
+
+                                .footer_get_in_touch__coordinate-image-3
+                                {
+                                    background: url("../img/spritesheet.png") no-repeat -322px -20px;
+                                }
                             }
                         }
                     }
@@ -1337,12 +1401,25 @@
     right: 20px;
     bottom: 20px;
     cursor: pointer;
-    background: url("../img/icon-up-open-mini.png") no-repeat 50% 50%, #506a85;
     z-index: 3;
+    background-color:  #506a85;
+
+    .btn-scrollUp-picture
+    {
+        margin: 15px 0 0 12px;
+        width: 16px;
+        height: 9px;
+        background: url("../img/spritesheet.png") no-repeat -20px -272px;
+    }
 
     &:hover
     {
-        background: url("../img/icon-up-open-mini-hover.png") no-repeat 50% 50%, #506a85;
+        background-color: #506a85;
+
+        .btn-scrollUp-picture
+        {
+            background: url("../img/spritesheet.png") no-repeat -76px -272px;
+        }
     }
 }
 
