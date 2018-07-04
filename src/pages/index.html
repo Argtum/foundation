@@ -1,4 +1,45 @@
-<div class="canvas-navbar__container grid-container off-canvas position-top" id="offCanvas" data-off-canvas
+<header class="navbar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="push">
+    <div class="navbar__logo logo-small"></div>
+    <div class="navbar__search-form text-right"></div>
+    <ul class="navbar__menu mennu simple" data-magellan>
+        <li class="mennu__button btn button white navbar__menu-element_home">
+            <a class="btn__link link" href="#">
+                HOME
+            </a>
+        </li>
+        <li class="mennu__button btn button white">
+            <a class="btn__link link" href="#latestWorks">
+                LATEST WORKS
+            </a>
+        </li>
+        <li class="mennu__button btn button white">
+            <a class="btn__link link" href="#">
+                BLOG
+            </a>
+        </li>
+        <li class="mennu__button btn button white">
+            <a class="btn__link link" href="#">
+                PAGES
+            </a>
+        </li>
+        <li class="mennu__button btn button white">
+            <a class="btn__link link" href="#features">
+                FEATURES
+            </a>
+        </li>
+        <li class="mennu__button btn button white navbar__menu-element_mega-menu">
+            <a class="btn__link link" href="#">
+                MEGA MENU
+            </a>
+        </li>
+        <li class="mennu__button btn button white">
+            <a class="btn__link link" href="#contactUs">
+                CONTACT US
+            </a>
+        </li>
+    </ul>
+</header>
+<!--<div class="canvas-navbar__container grid-container off-canvas position-top" id="offCanvas" data-off-canvas
     data-transition="push">
     <div class="canvas-navbar grid-x">
         <div class="canvas-navbar__logo cell large-1 medium-6 small-6"></div>
@@ -81,30 +122,29 @@
             </li>
         </ul>
     </div>
-</div>
-<div class="off-canvas-content" data-off-canvas-content>
-    <div class="hamburger-menu" data-toggle="offCanvas"></div>
-    <div class="header" id="top">
-        <div class="navbar_header__background">
-            <div class="navbar_header__container grid-container">
-                <div class="navbar_header grid-x">
-                    <div class="navbar_header__contact">
-                        <a class="navbar_header__contact_mail">
-                            <span class="navbar_header__contact_mail-picture"></span>
-                            info@reen.com
-                        </a>
-                        <a class="navbar_header__contact_phone">
-                            +00 (123) 456 78 90
-                        </a>
-                    </div>
-                    <div class="navbar_header__social">
-                        <div class="navbar_header__social-image navbar_header__social-image-1"></div>
-                        <div class="navbar_header__social-image navbar_header__social-image-2"></div>
-                        <div class="navbar_header__social-image navbar_header__social-image-3"></div>
-                        <div class="navbar_header__social-image navbar_header__social-image-4"></div>
-                        <div class="navbar_header__social-image navbar_header__social-image-5"></div>
-                        <div class="navbar_header__social-image navbar_header__social-image-6"></div>
-                    </div>
+</div>-->
+
+<article class="off-canvas-content" data-off-canvas-content>
+    <a class="btn_hamburger-menu" data-toggle="offCanvas" href="#"></a>
+    <header class="header" id="top">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="header__feedback">
+                    <a class="header__feedback_mail link">
+                        <span class="link__picture"></span>
+                        info@reen.com
+                    </a>
+                    <span class="header__feedback_phone">
+                        +00 (123) 456 78 90
+                    </span>
+                </div>
+                <div class="navbar_header__social">
+                    <div class="navbar_header__social-image navbar_header__social-image-1"></div>
+                    <div class="navbar_header__social-image navbar_header__social-image-2"></div>
+                    <div class="navbar_header__social-image navbar_header__social-image-3"></div>
+                    <div class="navbar_header__social-image navbar_header__social-image-4"></div>
+                    <div class="navbar_header__social-image navbar_header__social-image-5"></div>
+                    <div class="navbar_header__social-image navbar_header__social-image-6"></div>
                 </div>
             </div>
         </div>
@@ -265,7 +305,7 @@
                 <a class="navbar__search navbar__search-large cell large-1 text-right"></a>
             </div>
         </div>
-    </div>
+    </header>
     <div class="main" data-magellan>
         <div class="hero-carousel__container orbit" role="region" data-orbit>
             <div class="hero-carousel__wrapper orbit-wrapper">
@@ -727,9 +767,661 @@
             </div>
         </div>
     </div>
-</div>
+</article>
 <div data-magellan>
     <a class="btn-scrollUp" href="#top">
         <div class="btn-scrollUp-picture"></div>
     </a>
 </div>
+
+<!--<article class="off-canvas-content" data-off-canvas-content>
+    <a class="btn-hamburger-menu" data-toggle="offCanvas" href="#"></a>
+    <header class="header" id="top">
+        <div class="header">
+            <div class="navbar_header__container grid-container">
+                <div class="navbar_header grid-x">
+                    <div class="navbar_header__contact">
+                        <a class="navbar_header__contact_mail">
+                            <span class="navbar_header__contact_mail-picture"></span>
+                            info@reen.com
+                        </a>
+                        <a class="navbar_header__contact_phone">
+                            +00 (123) 456 78 90
+                        </a>
+                    </div>
+                    <div class="navbar_header__social">
+                        <div class="navbar_header__social-image navbar_header__social-image-1"></div>
+                        <div class="navbar_header__social-image navbar_header__social-image-2"></div>
+                        <div class="navbar_header__social-image navbar_header__social-image-3"></div>
+                        <div class="navbar_header__social-image navbar_header__social-image-4"></div>
+                        <div class="navbar_header__social-image navbar_header__social-image-5"></div>
+                        <div class="navbar_header__social-image navbar_header__social-image-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__container grid-container">
+            <div class="navbar grid-x">
+                <div class="navbar__logo cell large-2 medium-6 small-12"></div>
+                <ul class="navbar__menu cell large-9 medium-12 small-12 menu simple" data-magellan>
+                    <li class="navbar__menu-element navbar__menu-element_home" id="homeButton">
+                        <a class="navbar__menu-link" href="#">
+                            HOME
+                        </a>
+                        <ul class="home__menu_container vertical menu simple" id="homeMenu">
+                            <li class="home__menu_element home__menu_element-1">
+                                AGENT STYLE
+                            </li>
+                            <li class="home__menu_element">
+                                PRODUCT STYLE
+                            </li>
+                            <li class="home__menu_element">
+                                SERVICE STYLE
+                            </li>
+                            <li class="home__menu_element">
+                                PORTFOLIO STYLE
+                            </li>
+                            <li class="home__menu_element home__menu_element-5">
+                                SHOWCASE STYLE
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__menu-element">
+                        <a class="navbar__menu-link" href="#latestWorks">
+                            LATEST WORKS
+                        </a>
+                    </li>
+                    <li class="navbar__menu-element">
+                        <a class="navbar__menu-link" href="#">
+                            BLOG
+                        </a>
+                    </li>
+                    <li class="navbar__menu-element">
+                        <a class="navbar__menu-link" href="#">
+                            PAGES
+                        </a>
+                    </li>
+                    <li class="navbar__menu-element">
+                        <a class="navbar__menu-link" href="#features">
+                            FEATURES
+                        </a>
+                    </li>
+                    <li class="navbar__menu-element navbar__menu-element_mega-menu" id="megaButton">
+                        <a class="navbar__menu-link" href="#">
+                            MEGA MENU
+                        </a>
+                        <div class="mega-menu__container grid-container" id="megaMenu">
+                            <div class="mega-menu grid-x grid-margin-x" data-equalizer>
+                                <div class="mega-menu__block mega-menu__focus-on cell large-3 text-left" data-equalizer-watch>
+                                    <h2 class="mega-menu__block_headline">
+                                        FOCUS ON
+                                    </h2>
+                                    <div class="mega-menu__focus-on_image text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <p class="mega-menu__block_text mega-menu__focus-on_text">
+                                        Consed quodips ameniat empernam que apid cust molor eatis numa estio.
+                                    </p>
+                                    <a class="mega-menu__focus-on_button text-center button primary" href="#">
+                                        VIEV PROJECT
+                                    </a>
+                                </div>
+                                <div class="mega-menu__block mega-menu__speciale-page cell large-3 text-left" data-equalizer-watch>
+                                    <h2 class="mega-menu__block_headline">
+                                        SPECIALE PAGES
+                                    </h2>
+                                    <ul class="mega-menu__speciale-page_menu align-left">
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            <span class="mega-menu__speciale-page_menu-circle"></span>
+                                            3 Columns Details Grid Portfolio
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Fullscreen Grid Portfolio
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Portfolio Post with Video
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            2 Columns Grid Blog with Left Sidebar
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            3 Columns Grid Blog without Sidebar
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Blog Post with Right Sidebar
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Side Navigation Page
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            bout Page II
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Service Page I
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Pricing Page I
+                                        </li>
+                                        <li class="mega-menu__speciale-page_menu-element">
+                                            Contact Page I
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu__block mega-menu__latest-works cell large-3" data-equalizer-watch>
+                                    <h2 class="mega-menu__block_headline mega-menu__latest-works_headline">
+                                        LATEST WORKS
+                                    </h2>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-1 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-2 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-3 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-4 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-5 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-6 text-center">
+                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                    </div>
+                                </div>
+                                <div class="mega-menu__block mega-menu__about-us cell large-3 text-left" data-equalizer-watch>
+                                    <h2 class="mega-menu__block_headline">
+                                        ABOUT US
+                                    </h2>
+                                    <p class="mega-menu__block_text mega-menu__about-us_text">
+                                        Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria
+                                        volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.
+                                        <br>
+                                        <br>
+                                        Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
+                                    </p>
+                                    <a class="mega-menu__about-us_button text-center button primary" href="#">
+                                        READ MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-element">
+                        <a class="navbar__menu-link" href="#contactUs">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+                <a class="navbar__search navbar__search-large cell large-1 text-right"></a>
+            </div>
+        </div>
+    </header>
+    <div class="main" data-magellan>
+        <div class="hero-carousel__container orbit" role="region" data-orbit>
+            <div class="hero-carousel__wrapper orbit-wrapper">
+                <div class="hero-carousel__controls orbit-cotrols">
+                    <button class="hero-carousel__nav-button_left orbit-previous">
+                        <img src="{{root}}assets/img/icon-left-open-maxi.png" alt="left arrow">
+                    </button>
+                    <button class="hero-carousel__nav-button_right orbit-next">
+                        <img src="{{root}}assets/img/icon-right-open-maxi.png" alt="right arrow">
+                    </button>
+                </div>
+                <ul class="hero-carousel orbit-container">
+                    <li class=" hero-carousel__element hero-carousel__element-1 is-active orbit-slide text-center">
+                        <div class="hero-carousel__element-container hero-carousel__element-container-1 text-center">
+                            <h3 class="hero-carousel__element-title hero-carousel__element-title-1">
+                                MADE FOR DESIGNERS
+                            </h3>
+                            <p class="hero-carousel__element-text hero-carousel__element-text-1">
+                                Create your portfolio in minutes with the professionally and lovingly designed REEN
+                                <br>
+                                website template. Customize your site with versatile and easy to use futures.
+                            </p>
+                            <a class="hero-carousel__element-button hero-carousel__element-button-1 button primary" href="#">
+                                GET STARTED NOW
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hero-carousel__element hero-carousel__element-2 orbit-slide">
+                        <div class="hero-carousel__element-container hero-carousel__element-container-2">
+                            <div class="hero-carousel__element_block-2 grid-container text-center large-text-right">
+                                <h3 class="hero-carousel__element-title hero-carousel__element-title-2">
+                                    FRESH AND
+                                    <br>
+                                    BEAUTIFUL DESIGN
+                                </h3>
+                                <p class="hero-carousel__element-text hero-carousel__element-text-2">
+                                    REEN is designed to showcase your talent and put your work in the forefront.
+                                    <br>
+                                    Professionally use of typography and layout that fits your content.
+                                </p>
+                                <a class="hero-carousel__element-button hero-carousel__element-button-2 button primary" href="#">
+                                    GET STARTED NOW
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hero-carousel__element hero-carousel__element-3 orbit-slide">
+                        <div class="hero-carousel__element-container hero-carousel__element-container-3">
+                            <div class="hero-carousel__element_block-3 grid-container text-center large-text-left">
+                                <h3 class="hero-carousel__element-title hero-carousel__element-title-3-1">
+                                    CLEAN AND
+                                </h3>
+                                <h3 class="hero-carousel__element-title hero-carousel__element-title-3-2">
+                                    REUSABLE CODE
+                                </h3>
+                                <p class="hero-carousel__element-text hero-carousel__element-text-3">
+                                    The clean code allows you to easily copy code blocks from content
+                                    <br>
+                                    modules and past them in different places or layouts.
+                                </p>
+                                <a class="hero-carousel__element-button hero-carousel__element-button-3 button primary" href="#">
+                                    GET STARTED NOW
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hero-carousel__element hero-carousel__element-4 orbit-slide">
+                        <div class="hero-carousel__element-container hero-carousel__element-container-4">
+                            <div class="hero-carousel__element_block-4 grid-container align-right text-center large-text-right">
+                                <h3 class="hero-carousel__element-title hero-carousel__element-title-4-1">
+                                    JUST FOCUS ON
+                                </h3>
+                                <h3 class="hero-carousel__element-title hero-carousel__element-title-4-2">
+                                    YOUR CREATIVITY
+                                </h3>
+                                <p class="hero-carousel__element-text hero-carousel__element-text-4">
+                                    Take a break from messing around with heavy coding and spend your
+                                    <br>
+                                    time brainstorming ideas for your next project.
+                                </p>
+                                <a class="hero-carousel__element-button hero-carousel__element-button-4 button primary" href="#">
+                                    GET STARTED NOW
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hero-carousel__element hero-carousel__element-5 orbit-slide">
+                        <div class="hero-carousel__element-container hero-carousel__element-container-5 text-center">
+                            <h3 class="hero-carousel__element-title hero-carousel__element-title-5">
+                                SHOWCASE
+                                <br>
+                                YOUR CONTENT
+                            </h3>
+                            <p class="hero-carousel__element-text hero-carousel__element-text-5">
+                                With REEN your have the possibility to create website various
+                                <br>
+                                content quickly and easily. Now it's up to you!
+                            </p>
+                            <a class="hero-carousel__element-button hero-carousel__element-button-5 button primary" href="#">
+                                GET STARTED NOW
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-carousel__pagination">
+                <nav class="hero-carousel__bullets orbit-bullets">
+                    <button class="hero-carousel__pagination-indicator is-active" data-slide="0"></button>
+                    <button class="hero-carousel__pagination-indicator" data-slide="1"></button>
+                    <button class="hero-carousel__pagination-indicator" data-slide="2"></button>
+                    <button class="hero-carousel__pagination-indicator" data-slide="3"></button>
+                    <button class="hero-carousel__pagination-indicator" data-slide="4"></button>
+                </nav>
+            </div>
+        </div>
+        <section class="who_we_are cell grid-container" id="features" data-magellan-target="features">
+            <div class="who_we_are__headline grid-x">
+                <h4 class="who_we_are__headline-title cell large-8 medium-12 small-12 large-offset-2 text-center">
+                    Beautiful. Clean. Responsive.
+                </h4>
+                <p class="who_we_are__headline-text cell large-8 medium-12 small-12 large-offset-2 text-center">
+                    REEN is a high-quality solution for those who want a beautiful website in no time.
+                    It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,
+                    it doesn't matter. Your content will always looks its absolute best.
+                </p>
+            </div>
+            <div class="who_we_are__merits grid-x grid-padding-x" data-equalizer>
+                <div class="who_we_are__merit-quality who_we_are__merit-quality-1 cell large-4 large-offset-0 medium-12
+                    small-12 text-left" data-equalizer-watch>
+                    <div class="merit_picture merit_picture-1"></div>
+                    <h5 class="merit__title">
+                        Passion
+                    </h5>
+                    <p class="merit__text">
+                        Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                        sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+                    </p>
+                </div>
+                <div class="who_we_are__merit-quality who_we_are__merit-quality-2 cell large-4 large-offset-0 medium-12
+             small-12 text-left" data-equalizer-watch>
+                    <div class="merit_picture merit_picture-2"></div>
+                    <h5 class="merit__title">
+                        Creativity
+                    </h5>
+                    <p class="merit__text">
+                        Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                        sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+                    </p>
+                </div>
+                <div class="who_we_are__merit-quality who_we_are__merit-quality-3 cell large-4 large-offset-0 medium-12
+             small-12 text-left" data-equalizer-watch>
+                    <div class="merit_picture merit_picture-3"></div>
+                    <h5 class="merit__title">
+                        Quality
+                    </h5>
+                    <p class="merit__text">
+                        Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                        sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="latest_works__background" id="latestWorks" data-magellan-target="latestWork">
+            <div class="latest_works grid-container">
+                <div class="latest_works__headline grid-x">
+                    <h4 class="latest_works__headline-title cell large-12 text-center">
+                        Check out our latest works
+                    </h4>
+                    <p class="latest_works__headline-text cell large-12 text-center">
+                        Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                    </p>
+                </div>
+                <div class="latest_works__container grid-x grid-margin-x">
+                    <figure class="latest_works__figure latest_works__figure-1 cell large-6 medium-12 small-12 text-center">
+                        <div class="figure_picture figure_picture-1 text-center">
+                            <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                        </div>
+                        <div class="figcaption">
+                            <h6 class="figcaption_title">
+                                Grand Motel gets an identity brushup
+                            </h6>
+                            <span class="figcaption_subheader">
+                                Identity
+                            </span>
+                        </div>
+                    </figure>
+                    <figure class="latest_works__figure latest_works__figure-2 cell large-6 medium-12 small-12 text-center">
+                        <div class="figure_picture figure_picture-2 text-center">
+                            <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                        </div>
+                        <div class="figcaption">
+                            <h6 class="figcaption_title">
+                                Fresh branding for a creative startup
+                            </h6>
+                            <span class="figcaption_subheader">
+                                Identity
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="latest_works__carousel-container orbit" role="region" data-orbit>
+                        <div class="latest_works__wrapper orbit-wrapper">
+                            <div class="latest_works__controls orbit-cotrols">
+                                <button class="latest_works__nav-button latest_works__nav-button_left orbit-previous">
+                                    <img src="{{root}}assets/img/icon-left-open-mini.png" alt="small left arrow">
+                                </button>
+                                <button class="latest_works__nav-button latest_works__nav-button_right orbit-next">
+                                    <img src="{{root}}assets/img/icon-right-open-mini.png" alt="small right arrow">
+                                </button>
+                            </div>
+                            <div class="latest_works__carousel orbit-container">
+                                <div class=" latest_works__element latest_works__element-1 is-active orbit-slide">
+                                    <div class="latest_works__element-image latest_works__element-image-1 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Simpli Nota
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-2 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Vinil Record
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-3 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Astor & Yancy
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-4 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Signwall
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest_works__element latest_works__element-2 orbit-slide">
+                                    <div class="latest_works__element-image latest_works__element-image-1 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Simpli Nota
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-2 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Vinil Record
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-3 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Astor & Yancy
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-4 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Signwall
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest_works__element latest_works__element-3 orbit-slide">
+                                    <div class="latest_works__element-image latest_works__element-image-1 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Simpli Nota
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-2 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Vinil Record
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-3 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Astor & Yancy
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="latest_works__element-image latest_works__element-image-4 text-center">
+                                        <div class="latest_works__element-headline">
+                                            Signwall
+                                            <br>
+                                            <span class="latest_works__element-subheader">
+                                                Identity
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="latest_works__pagination orbit-bullets">
+                            <button class="latest_works__pagination-indicator is-active" data-slide="0"></button>
+                            <button class="latest_works__pagination-indicator" data-slide="1"></button>
+                            <button class="latest_works__pagination-indicator" data-slide="2"></button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="get_in_touch grid-container" id="contactUs" data-magellan-target="contactUs">
+            <div class="get_in_touch__container grid-x grid-y">
+                <h4 class="get_in_touch_title text-center">
+                    Want to work with us?
+                </h4>
+                <p class="get_in_touch_text text-center">
+                    Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                    Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
+                </p>
+                <a class="get_in_touch__button button primary" href="#">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="footer__background">
+            <div class="footer__container grid-container">
+                <div class="footer__info grid-x grid-margin-x grid-padding-x" data-equalizer>
+                    <div class="footer_block footer_who_we_are cell" data-equalizer-watch>
+                        <h6 class="footer_block__headline footer_who_we_are_headline">
+                            WHO WE ARE
+                        </h6>
+                        <div class="footer_who_we_are__logo"></div>
+                        <p class="footer_who_we_are__text">
+                            Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                            Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
+                        </p>
+                        <div class="footer_who_we_are__link-container">
+                            <a class="footer_who_we_are__link">
+                                More about us
+                            </a>
+                            <span class="footer_who_we_are__link_right-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="footer_block footer_latest_works cell" data-equalizer-watch>
+                        <h6 class="footer_block__headline">
+                            LATEST WORKS
+                        </h6>
+                        <div class="footer_latest_works__image-container">
+                            <div class="footer_latest_works__image footer_latest_works__image-1 text-center">
+                                <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="add you picture">
+                            </div>
+                            <div class="footer_latest_works__image footer_latest_works__image-2 text-center">
+                                <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="add you picture">
+                            </div>
+                            <div class="footer_latest_works__image footer_latest_works__image-3 text-center">
+                                <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="add you picture">
+                            </div>
+                            <div class="footer_latest_works__image footer_latest_works__image-4 text-center">
+                                <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="add you picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_block footer_get_in_touch cell" data-equalizer-watch>
+                        <h6 class="footer_block__headline">
+                            GET IN TOUCH
+                        </h6>
+                        <p class="footer_get_in_touch__text">
+                            Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis
+                            dentibea autem inisita.
+                        </p>
+                        <ul class="footer_get_in_touch__coordinate">
+                            <li class="footer_get_in_touch__coordinate-text-1">
+                                <span class="footer_get_in_touch__coordinate-image-1"></span>
+                                84 Street, City, State 24813
+                            </li>
+                            <li class="footer_get_in_touch__coordinate-text-2">
+                                <span class="footer_get_in_touch__coordinate-image-2"></span>
+                                +00 (123) 456 78 90
+                            </li>
+                            <li class="footer_get_in_touch__coordinate-text-3">
+                                <span class="footer_get_in_touch__coordinate-image-3"></span>
+                                info@reen.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block footer_free_updates cell" data-equalizer-watch>
+                        <h6 class="footer_block__headline">
+                            FREE UPDATES
+                        </h6>
+                        <p class="footer_free_updates__text">
+                            Conecus iure posae volon remped modis aut lor volor accabora incim resto explabo.
+                        </p>
+                        <form class="footer_free_updates__input input-group" method="post">
+                            <input class="footer_free_updates__input-field input-group-field" type="text"
+                                   placeholder="Enter your email address"/>
+                            <div class="input-group-button">
+                                <input type="submit" value="SUBSCRIBE" class="footer_free_updates__input-button
+                                    text-center button primary"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_ending__background">
+            <div class="footer_ending__container grid-container">
+                <div class="footer_ending grid-x">
+                    <span class="footer_ending__copyrighted text-center large-text-left medium-text-left cell large-4 medium-4 small-12">
+                        © 2014 REEN. All rights reserved.
+                    </span>
+                    <div class="footer_ending__menu cell large-8 medium-8 small-12 text-center large-text-right medium-text-right">
+                        <span class="footer_ending__menu-element">
+                            Home
+                        </span>
+                        <span class="footer_ending__menu-element">
+                            Portfolio
+                        </span>
+                        <span class="footer_ending__menu-element">
+                            Blog
+                        </span>
+                        <span class="footer_ending__menu-element">
+                            About
+                        </span>
+                        <span class="footer_ending__menu-element">
+                            Services
+                        </span>
+                        <span class="footer_ending__menu-element">
+                            Contact
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<div data-magellan>
+    <a class="btn-scrollUp" href="#top">
+        <div class="btn-scrollUp-picture"></div>
+    </a>
+</div>-->

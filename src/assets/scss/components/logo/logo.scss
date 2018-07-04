@@ -1,0 +1,20 @@
+.logo
+{
+    cursor: pointer;
+
+    &-small
+    {
+        @extend .logo;
+        margin: 15px 0 0 10px;
+        width: 80px;
+        height: 20px;
+        background: url("../img/spritesheet.png") no-repeat -432px -252px;
+        line-height: 50px;
+        float: left;
+
+        &:hover
+        {
+            background: url("../img/spritesheet.png") no-repeat -415px -312px;
+        }
+    }
+}

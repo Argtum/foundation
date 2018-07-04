@@ -74,6 +74,7 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
+  white: #fff,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -519,7 +520,7 @@ $maincontent-class: 'off-canvas-content';
 
 $orbit-bullet-background: #536A86; //$medium-gray;
 $orbit-bullet-background-active: #3CBB9B; //$dark-gray;
-$orbit-bullet-diameter: 1.0rem;//1.2rem;
+$orbit-bullet-diameter: 1.2rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;
 $orbit-bullet-margin-bottom: 0.8rem;

@@ -1,0 +1,25 @@
+.link
+{
+    cursor: pointer;
+    color: $main_font_color;
+
+    &__picture
+    {
+        margin-top: 17px;
+        width: 11px;
+        height: 9px;
+        background: url("../img/spritesheet.png") no-repeat -271px -20px;
+        float: left;
+    }
+
+    &:hover
+    {
+        color: $hover_font_color;
+
+        .link__picture
+        {
+            background: url("../img/spritesheet.png") no-repeat -322px -20px;
+        }
+    }
+
+}

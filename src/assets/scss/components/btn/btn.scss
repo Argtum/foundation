@@ -1,0 +1,36 @@
+.btn
+{
+    cursor: pointer;
+
+    &__link
+    {
+        height: 50px;
+        line-height: 50px;
+        font: 700 15px/18px 'Source Sans Pro', sans-serif;
+        color: $main_font_color;
+    }
+
+    &:hover
+    {
+        background-color: #f5f7f9;
+        z-index: 2;
+
+        .btn__link
+        {
+            color: $hover_font_color;
+        }
+    }
+
+    &_hamburger-menu
+    {
+        @media screen and (max-width: 1023px)
+        {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: block;
+            background: url("../img/hamburger_menu.svg") no-repeat 50% 50%;
+            margin: 20px;
+        }
+    }
+}

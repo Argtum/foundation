@@ -1,0 +1,27 @@
+.header
+{
+    min-height: 40px;
+    background-color: #f5f7f9;
+
+    &__feedback
+    {
+        line-height: 40px;
+        float: left;
+        margin-right: auto;
+
+        &_mail
+        {
+            font: 14px/40px 'Source Sans Pro', sans-serif;
+            margin-left: 10px;
+        }
+
+        &_phone
+        {
+            font: 12px/40px 'Source Sans Pro', sans-serif;
+            color: $main_font_color;
+            background: url("../img/icon-mobile-dark.png") no-repeat 0 50%;
+            margin-left: 25px;
+            padding-left: 15px;
+        }
+    }
+}
