@@ -17,4 +17,19 @@
             background: url("../img/spritesheet.png") no-repeat -415px -312px;
         }
     }
+
+    &-large
+    {
+        @extend .logo;
+        width: 161px;
+        height: 40px;
+        margin: 35px 0;
+        background: url("../img/spritesheet.png") no-repeat -438px -20px;
+        float: left;
+
+        &:hover
+        {
+            background: url("../img/spritesheet.png") no-repeat -438px -100px;
+        }
+    }
 }

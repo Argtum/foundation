@@ -43,7 +43,7 @@
 //@include foundation-title-bar;
 //@include foundation-tooltip;
 //@include foundation-top-bar;
-//@include foundation-visibility-classes;
+@include foundation-visibility-classes;
 //@include foundation-float-classes;
 //@include foundation-flex-classes;
 
@@ -53,9 +53,9 @@
 @include motion-ui-animations;
 
 //
-@import "eraser";
 @import "constants";
 @import "mixins";
+@import "eraser";
 
 @import "components/navbar/navbar";
 @import "components/btn/btn";
@@ -64,5 +64,7 @@
 @import "components/search-form/search-form";
 @import "components/header/header";
 @import "components/link/link";
+@import "components/main/main";
+@import "components/text/text";
 
 @import 'style';

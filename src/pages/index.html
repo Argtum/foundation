@@ -1,39 +1,39 @@
 <header class="navbar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="push">
     <div class="navbar__logo logo-small"></div>
     <div class="navbar__search-form text-right"></div>
-    <ul class="navbar__menu mennu simple" data-magellan>
-        <li class="mennu__button btn button white navbar__menu-element_home">
-            <a class="btn__link link" href="#">
+    <ul class="navbar__menu menu simple" data-magellan>
+        <li class="mennu__button btn navbar__menu-element_home">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#">
                 HOME
             </a>
         </li>
-        <li class="mennu__button btn button white">
-            <a class="btn__link link" href="#latestWorks">
+        <li class="mennu__button btn">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#latestWorks">
                 LATEST WORKS
             </a>
         </li>
-        <li class="mennu__button btn button white">
-            <a class="btn__link link" href="#">
+        <li class="mennu__button btn">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#">
                 BLOG
             </a>
         </li>
-        <li class="mennu__button btn button white">
-            <a class="btn__link link" href="#">
+        <li class="mennu__button btn">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#">
                 PAGES
             </a>
         </li>
-        <li class="mennu__button btn button white">
-            <a class="btn__link link" href="#features">
+        <li class="mennu__button btn">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#features">
                 FEATURES
             </a>
         </li>
-        <li class="mennu__button btn button white navbar__menu-element_mega-menu">
-            <a class="btn__link link" href="#">
+        <li class="mennu__button btn navbar__menu-element_mega-menu">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#">
                 MEGA MENU
             </a>
         </li>
-        <li class="mennu__button btn button white">
-            <a class="btn__link link" href="#contactUs">
+        <li class="mennu__button btn">
+            <a class="btn__link text_color-main text_font-nav-button link" href="#contactUs">
                 CONTACT US
             </a>
         </li>
@@ -125,8 +125,8 @@
 </div>-->
 
 <article class="off-canvas-content" data-off-canvas-content>
-    <a class="btn_hamburger-menu" data-toggle="offCanvas" href="#"></a>
-    <header class="header" id="top">
+    <a class="btn_hamburger-menu hide-for-large" data-toggle="offCanvas" href="#"></a>
+    <header class="header show-for-large" id="top">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="header__feedback">
@@ -138,279 +138,271 @@
                         +00 (123) 456 78 90
                     </span>
                 </div>
-                <div class="navbar_header__social">
-                    <div class="navbar_header__social-image navbar_header__social-image-1"></div>
-                    <div class="navbar_header__social-image navbar_header__social-image-2"></div>
-                    <div class="navbar_header__social-image navbar_header__social-image-3"></div>
-                    <div class="navbar_header__social-image navbar_header__social-image-4"></div>
-                    <div class="navbar_header__social-image navbar_header__social-image-5"></div>
-                    <div class="navbar_header__social-image navbar_header__social-image-6"></div>
+                <div class="header__menu-social">
+                    <a class="btn_social header__button_1"></a>
+                    <a class="btn_social header__button_2"></a>
+                    <a class="btn_social header__button_3"></a>
+                    <a class="btn_social header__button_4"></a>
+                    <a class="btn_social header__button_5"></a>
+                    <a class="btn_social header__button_6"></a>
                 </div>
-            </div>
-        </div>
-        <div class="navbar__container grid-container">
-            <div class="navbar grid-x">
-                <div class="navbar__logo cell large-2 medium-6 small-12"></div>
-                <ul class="navbar__menu cell large-9 medium-12 small-12 menu simple" data-magellan>
-                    <li class="navbar__menu-element navbar__menu-element_home" id="homeButton">
-                        <a class="navbar__menu-link" href="#">
-                            HOME
-                        </a>
-                        <ul class="home__menu_container vertical menu simple" id="homeMenu">
-                            <li class="home__menu_element home__menu_element-1">
-                                AGENT STYLE
-                            </li>
-                            <li class="home__menu_element">
-                                PRODUCT STYLE
-                            </li>
-                            <li class="home__menu_element">
-                                SERVICE STYLE
-                            </li>
-                            <li class="home__menu_element">
-                                PORTFOLIO STYLE
-                            </li>
-                            <li class="home__menu_element home__menu_element-5">
-                                SHOWCASE STYLE
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar__menu-element">
-                        <a class="navbar__menu-link" href="#latestWorks">
-                            LATEST WORKS
-                        </a>
-                    </li>
-                    <li class="navbar__menu-element">
-                        <a class="navbar__menu-link" href="#">
-                            BLOG
-                        </a>
-                    </li>
-                    <li class="navbar__menu-element">
-                        <a class="navbar__menu-link" href="#">
-                            PAGES
-                        </a>
-                    </li>
-                    <li class="navbar__menu-element">
-                        <a class="navbar__menu-link" href="#features">
-                            FEATURES
-                        </a>
-                    </li>
-                    <li class="navbar__menu-element navbar__menu-element_mega-menu" id="megaButton">
-                        <a class="navbar__menu-link" href="#">
-                            MEGA MENU
-                        </a>
-                        <div class="mega-menu__container grid-container" id="megaMenu">
-                            <div class="mega-menu grid-x grid-margin-x" data-equalizer>
-                                <div class="mega-menu__block mega-menu__focus-on cell large-3 text-left" data-equalizer-watch>
-                                    <h2 class="mega-menu__block_headline">
-                                        FOCUS ON
-                                    </h2>
-                                    <div class="mega-menu__focus-on_image text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <p class="mega-menu__block_text mega-menu__focus-on_text">
-                                        Consed quodips ameniat empernam que apid cust molor eatis numa estio.
-                                    </p>
-                                    <a class="mega-menu__focus-on_button text-center button primary" href="#">
-                                        VIEV PROJECT
-                                    </a>
-                                </div>
-                                <div class="mega-menu__block mega-menu__speciale-page cell large-3 text-left" data-equalizer-watch>
-                                    <h2 class="mega-menu__block_headline">
-                                        SPECIALE PAGES
-                                    </h2>
-                                    <ul class="mega-menu__speciale-page_menu align-left">
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            <span class="mega-menu__speciale-page_menu-circle"></span>
-                                            3 Columns Details Grid Portfolio
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Fullscreen Grid Portfolio
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Portfolio Post with Video
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            2 Columns Grid Blog with Left Sidebar
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            3 Columns Grid Blog without Sidebar
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Blog Post with Right Sidebar
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Side Navigation Page
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            bout Page II
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Service Page I
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Pricing Page I
-                                        </li>
-                                        <li class="mega-menu__speciale-page_menu-element">
-                                            Contact Page I
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu__block mega-menu__latest-works cell large-3" data-equalizer-watch>
-                                    <h2 class="mega-menu__block_headline mega-menu__latest-works_headline">
-                                        LATEST WORKS
-                                    </h2>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-1 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-2 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-3 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-4 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-5 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                    <div class="mega-menu__latest-works_image mega-menu__latest-works_image-6 text-center">
-                                        <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
-                                    </div>
-                                </div>
-                                <div class="mega-menu__block mega-menu__about-us cell large-3 text-left" data-equalizer-watch>
-                                    <h2 class="mega-menu__block_headline">
-                                        ABOUT US
-                                    </h2>
-                                    <p class="mega-menu__block_text mega-menu__about-us_text">
-                                        Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria
-                                        volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.
-                                        <br>
-                                        <br>
-                                        Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
-                                    </p>
-                                    <a class="mega-menu__about-us_button text-center button primary" href="#">
-                                        READ MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="navbar__menu-element">
-                        <a class="navbar__menu-link" href="#contactUs">
-                            CONTACT US
-                        </a>
-                    </li>
-                </ul>
-                <a class="navbar__search navbar__search-large cell large-1 text-right"></a>
             </div>
         </div>
     </header>
-    <div class="main" data-magellan>
-        <div class="hero-carousel__container orbit" role="region" data-orbit>
-            <div class="hero-carousel__wrapper orbit-wrapper">
-                <div class="hero-carousel__controls orbit-cotrols">
-                    <button class="hero-carousel__nav-button_left orbit-previous">
-                        <img src="{{root}}assets/img/icon-left-open-maxi.png" alt="left arrow">
-                    </button>
-                    <button class="hero-carousel__nav-button_right orbit-next">
-                        <img src="{{root}}assets/img/icon-right-open-maxi.png" alt="right arrow">
-                    </button>
+    <div class="navbar grid-container show-for-large">
+        <div class="grid-x">
+            <div class="navbar__logo logo-large"></div>
+            <div class="navbar__menu-main menu simple" data-magellan>
+                <div class="mennu__button_main btn" id="homeButton">
+                    <a class="btn__link text_color-main text_font-nav-button link" href="#">
+                        HOME
+                    </a>
+                    <!--<ul class="home__menu_container vertical menu simple" id="homeMenu">
+                        <li class="home__menu_element home__menu_element-1">
+                            AGENT STYLE
+                        </li>
+                        <li class="home__menu_element">
+                            PRODUCT STYLE
+                        </li>
+                        <li class="home__menu_element">
+                            SERVICE STYLE
+                        </li>
+                        <li class="home__menu_element">
+                            PORTFOLIO STYLE
+                        </li>
+                        <li class="home__menu_element home__menu_element-5">
+                            SHOWCASE STYLE
+                        </li>
+                    </ul>-->
                 </div>
-                <ul class="hero-carousel orbit-container">
-                    <li class=" hero-carousel__element hero-carousel__element-1 is-active orbit-slide text-center">
-                        <div class="hero-carousel__element-container hero-carousel__element-container-1 text-center">
-                            <h3 class="hero-carousel__element-title hero-carousel__element-title-1">
-                                MADE FOR DESIGNERS
-                            </h3>
-                            <p class="hero-carousel__element-text hero-carousel__element-text-1">
-                                Create your portfolio in minutes with the professionally and lovingly designed REEN
-                                <br>
-                                website template. Customize your site with versatile and easy to use futures.
-                            </p>
-                            <a class="hero-carousel__element-button hero-carousel__element-button-1 button primary" href="#">
-                                GET STARTED NOW
-                            </a>
-                        </div>
-                    </li>
-                    <li class="hero-carousel__element hero-carousel__element-2 orbit-slide">
-                        <div class="hero-carousel__element-container hero-carousel__element-container-2">
-                            <div class="hero-carousel__element_block-2 grid-container text-center large-text-right">
-                                <h3 class="hero-carousel__element-title hero-carousel__element-title-2">
-                                    FRESH AND
-                                    <br>
-                                    BEAUTIFUL DESIGN
-                                </h3>
-                                <p class="hero-carousel__element-text hero-carousel__element-text-2">
-                                    REEN is designed to showcase your talent and put your work in the forefront.
-                                    <br>
-                                    Professionally use of typography and layout that fits your content.
+                <div class="mennu__button_main btn">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#latestWorks">
+                        LATEST WORKS
+                    </a>
+                </div>
+                <div class="mennu__button_main btn">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#">
+                        BLOG
+                    </a>
+                </div>
+                <div class="mennu__button_main btn">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#">
+                        PAGES
+                    </a>
+                </div>
+                <div class="mennu__button_main btn">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#features">
+                        FEATURES
+                    </a>
+                </div>
+                <div class="mennu__button_main btn navbar__menu-element_mega-menu" id="megaButton">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#">
+                        MEGA MENU
+                    </a>
+                    <!--<div class="mega-menu__container grid-container" id="megaMenu">
+                        <div class="mega-menu grid-x grid-margin-x" data-equalizer>
+                            <div class="mega-menu__block mega-menu__focus-on cell large-3 text-left" data-equalizer-watch>
+                                <h2 class="mega-menu__block_headline">
+                                    FOCUS ON
+                                </h2>
+                                <div class="mega-menu__focus-on_image text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <p class="mega-menu__block_text mega-menu__focus-on_text">
+                                    Consed quodips ameniat empernam que apid cust molor eatis numa estio.
                                 </p>
-                                <a class="hero-carousel__element-button hero-carousel__element-button-2 button primary" href="#">
-                                    GET STARTED NOW
+                                <a class="mega-menu__focus-on_button text-center button primary" href="#">
+                                    VIEV PROJECT
+                                </a>
+                            </div>
+                            <div class="mega-menu__block mega-menu__speciale-page cell large-3 text-left" data-equalizer-watch>
+                                <h2 class="mega-menu__block_headline">
+                                    SPECIALE PAGES
+                                </h2>
+                                <ul class="mega-menu__speciale-page_menu align-left">
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        <span class="mega-menu__speciale-page_menu-circle"></span>
+                                        3 Columns Details Grid Portfolio
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Fullscreen Grid Portfolio
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Portfolio Post with Video
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        2 Columns Grid Blog with Left Sidebar
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        3 Columns Grid Blog without Sidebar
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Blog Post with Right Sidebar
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Side Navigation Page
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        bout Page II
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Service Page I
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Pricing Page I
+                                    </li>
+                                    <li class="mega-menu__speciale-page_menu-element">
+                                        Contact Page I
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu__block mega-menu__latest-works cell large-3" data-equalizer-watch>
+                                <h2 class="mega-menu__block_headline mega-menu__latest-works_headline">
+                                    LATEST WORKS
+                                </h2>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-1 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-2 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-3 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-4 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-5 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                                <div class="mega-menu__latest-works_image mega-menu__latest-works_image-6 text-center">
+                                    <img class="plus_icon" src="{{root}}assets/img/icon-plus.png" alt="put you slide">
+                                </div>
+                            </div>
+                            <div class="mega-menu__block mega-menu__about-us cell large-3 text-left" data-equalizer-watch>
+                                <h2 class="mega-menu__block_headline">
+                                    ABOUT US
+                                </h2>
+                                <p class="mega-menu__block_text mega-menu__about-us_text">
+                                    Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria
+                                    volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.
+                                    <br>
+                                    <br>
+                                    Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
+                                </p>
+                                <a class="mega-menu__about-us_button text-center button primary" href="#">
+                                    READ MORE
                                 </a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hero-carousel__element hero-carousel__element-3 orbit-slide">
-                        <div class="hero-carousel__element-container hero-carousel__element-container-3">
-                            <div class="hero-carousel__element_block-3 grid-container text-center large-text-left">
-                                <h3 class="hero-carousel__element-title hero-carousel__element-title-3-1">
-                                    CLEAN AND
-                                </h3>
-                                <h3 class="hero-carousel__element-title hero-carousel__element-title-3-2">
-                                    REUSABLE CODE
-                                </h3>
-                                <p class="hero-carousel__element-text hero-carousel__element-text-3">
-                                    The clean code allows you to easily copy code blocks from content
-                                    <br>
-                                    modules and past them in different places or layouts.
-                                </p>
-                                <a class="hero-carousel__element-button hero-carousel__element-button-3 button primary" href="#">
-                                    GET STARTED NOW
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="hero-carousel__element hero-carousel__element-4 orbit-slide">
-                        <div class="hero-carousel__element-container hero-carousel__element-container-4">
-                            <div class="hero-carousel__element_block-4 grid-container align-right text-center large-text-right">
-                                <h3 class="hero-carousel__element-title hero-carousel__element-title-4-1">
-                                    JUST FOCUS ON
-                                </h3>
-                                <h3 class="hero-carousel__element-title hero-carousel__element-title-4-2">
-                                    YOUR CREATIVITY
-                                </h3>
-                                <p class="hero-carousel__element-text hero-carousel__element-text-4">
-                                    Take a break from messing around with heavy coding and spend your
-                                    <br>
-                                    time brainstorming ideas for your next project.
-                                </p>
-                                <a class="hero-carousel__element-button hero-carousel__element-button-4 button primary" href="#">
-                                    GET STARTED NOW
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="hero-carousel__element hero-carousel__element-5 orbit-slide">
-                        <div class="hero-carousel__element-container hero-carousel__element-container-5 text-center">
-                            <h3 class="hero-carousel__element-title hero-carousel__element-title-5">
-                                SHOWCASE
-                                <br>
-                                YOUR CONTENT
-                            </h3>
-                            <p class="hero-carousel__element-text hero-carousel__element-text-5">
-                                With REEN your have the possibility to create website various
-                                <br>
-                                content quickly and easily. Now it's up to you!
-                            </p>
-                            <a class="hero-carousel__element-button hero-carousel__element-button-5 button primary" href="#">
-                                GET STARTED NOW
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                    </div>-->
+                </div>
+                <div class="mennu__button_main btn">
+                    <a class="btn__link text_font-nav-button text_color-main link" href="#contactUs">
+                        CONTACT US
+                    </a>
+                </div>
             </div>
+            <div class="navbar__search-form text-right"></div>
+        </div>
+    </div>
+    <div data-magellan>
+        <div class="hero-carousel orbit" role="region" data-orbit>
+            <div class="orbit-cotrols">
+                <button class="hero-carousel__button orbit-previous">
+                    <img src="{{root}}assets/img/icon-left-open-maxi.png" alt="left arrow">
+                </button>
+                <button class="hero-carousel__button orbit-next">
+                    <img src="{{root}}assets/img/icon-right-open-maxi.png" alt="right arrow">
+                </button>
+            </div>
+            <ul class="orbit-container">
+                <li class="hero-carousel__background_1 is-active orbit-slide text-center">
+                    <h3 class="text_font-h3 text_color-white hero-carousel__title_1">
+                        MADE FOR DESIGNERS
+                    </h3>
+                    <p class="text_font-hero text_color-white-blackout hero-carousel__text_1">
+                        Create your portfolio in minutes with the professionally and lovingly designed REEN
+                        <br>
+                        website template. Customize your site with versatile and easy to use futures.
+                    </p>
+                    <a class="btn_hero text_color-white hero-carousel__button_1 button primary" href="#">
+                        GET STARTED NOW
+                    </a>
+                </li>
+                <li class="hero-carousel__background_2 orbit-slide text-center large-text-right">
+                    <div class="grid-container">
+                        <h3 class="text_font-h3 text_color-white hero-carousel__title_2">
+                            FRESH AND
+                            <br>
+                            BEAUTIFUL DESIGN
+                        </h3>
+                        <p class="text_font-hero text_color-white hero-carousel__text_2">
+                            REEN is designed to showcase your talent and put your work in the forefront.
+                            <br>
+                            Professionally use of typography and layout that fits your content.
+                        </p>
+                        <a class="btn_hero text_color-white hero-carousel__button_2 button primary" href="#">
+                            GET STARTED NOW
+                        </a>
+                    </div>
+                </li>
+                <li class="hero-carousel__background_3 orbit-slide text-center large-text-left">
+                    <div class="grid-container">
+                        <div class="hero-carousel__container_3">
+                            <h3 class="text_font-h3 text_color-white text_background-color-main hero-carousel__title_3-1">
+                                CLEAN AND
+                            </h3>
+                            <h3 class="text_font-h3 text_color-white text_background-color-main hero-carousel__title_3-2">
+                                REUSABLE CODE
+                            </h3>
+                        </div>
+                        <p class="text_font-hero text_color-main hero-carousel__text_3">
+                            The clean code allows you to easily copy code blocks from content
+                            <br>
+                            modules and past them in different places or layouts.
+                        </p>
+                        <a class="btn_hero text_color-white hero-carousel__button_3 button primary" href="#">
+                            GET STARTED NOW
+                        </a>
+                    </div>
+                </li>
+                <li class="hero-carousel__background_4 orbit-slide align-right text-center large-text-right">
+                    <div class="grid-container">
+                        <div class="hero-carousel__container_4">
+                            <h3 class="text_font-h3 text_color-white text_background-color-main hero-carousel__title_4-1">
+                                JUST FOCUS ON
+                            </h3>
+                            <h3 class="text_font-h3 text_color-white text_background-color-main hero-carousel__title_4-2">
+                                YOUR CREATIVITY
+                            </h3>
+                        </div>
+                        <p class="text_font-hero text_color-white hero-carousel__text_4">
+                            Take a break from messing around with heavy coding and spend your
+                            <br>
+                            time brainstorming ideas for your next project.
+                        </p>
+                        <a class="btn_hero text_color-white hero-carousel__button_4 button primary" href="#">
+                            GET STARTED NOW
+                        </a>
+                    </div>
+                </li>
+                <li class="hero-carousel__background_5 orbit-slide text-center">
+                    <h3 class="text_font-h3 text_color-white hero-carousel__title_5">
+                        SHOWCASE
+                        <br>
+                        YOUR CONTENT
+                    </h3>
+                    <p class="text_font-hero text_color-white-blackout hero-carousel__text_5">
+                        With REEN your have the possibility to create website various
+                        <br>
+                        content quickly and easily. Now it's up to you!
+                    </p>
+                    <a class="btn_hero text_color-white hero-carousel__button_5 button primary" href="#">
+                        GET STARTED NOW
+                    </a>
+                </li>
+            </ul>
             <div class="hero-carousel__pagination">
                 <nav class="hero-carousel__bullets orbit-bullets">
                     <button class="hero-carousel__pagination-indicator is-active" data-slide="0"></button>

@@ -1,13 +1,15 @@
 .mennu
 {
-    margin: 0 auto;
-
     &__button
     {
         height: 50px;
-        padding: 0 20px;
-        line-height: 50px;
-        margin: 0;
-        float: left;
+        padding: 15px 18px;
+        border: 1px solid #fff;
+    }
+
+    &__button_main
+    {
+        @extend .mennu__button;
+        margin-top: 5px;
     }
 }
