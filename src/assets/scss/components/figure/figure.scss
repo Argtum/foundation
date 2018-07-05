@@ -1,0 +1,67 @@
+.figure
+{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(26,187,156,0.9);
+    transition: all 200ms ease-out;
+
+    &:hover
+    {
+        opacity: 1;
+    }
+
+    &_big
+    {
+        @extend .figure;
+        width: 570px;
+        height: 390px;
+
+        &_img
+        {
+            margin-top: 195px;
+        }
+    }
+
+    &_small
+    {
+        @extend .figure;
+        width: 270px;
+        height: 185px;
+
+        &_title
+        {
+            line-height: 185px;
+        }
+
+        &_text
+        {
+
+        }
+    }
+
+    &__img
+    {
+
+    }
+
+    &__figcaption
+    {
+        min-height: 110px;
+
+        &_title
+        {
+            padding-top: 30px;
+            width: 350px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        &_text
+        {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}

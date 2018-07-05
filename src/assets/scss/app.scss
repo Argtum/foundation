@@ -44,7 +44,7 @@
 //@include foundation-tooltip;
 //@include foundation-top-bar;
 @include foundation-visibility-classes;
-//@include foundation-float-classes;
+@include foundation-float-classes;
 //@include foundation-flex-classes;
 
 //@include foundation-prototype-classes;
@@ -62,8 +62,10 @@
 @import "components/logo/logo";
 @import "components/header/header";
 @import "components/link/link";
-@import "components/main/main";
+@import "components/block/block";
 @import "components/text/text";
 @import "components/background/background";
+@import "components/figure/figure";
+@import "components/main/main";
 
 @import 'style';
