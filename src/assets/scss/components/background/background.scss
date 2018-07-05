@@ -1,0 +1,28 @@
+.background
+{
+    &_color
+    {
+        &_main
+        {
+            background-color: #536a86;
+        }
+
+        &_header
+        {
+            background-color: #f5f7f9;
+        }
+
+        &_hover
+        {
+            &:hover
+            {
+                @extend .background_color_header
+            }
+        }
+
+        &_white
+        {
+            background-color: #fff;
+        }
+    }
+}

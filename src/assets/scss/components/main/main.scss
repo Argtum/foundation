@@ -2,7 +2,28 @@
 {
     &__nav-button
     {
+        &_prev
+        {
+            margin-left: 30px;
+            //width: 16px;
+            //height: 27px;
+            //background: url("../img/spritesheet.png") no-repeat -32px -19px;
 
+            &:hover
+            {
+                //background: url("../img/spritesheet.png") no-repeat -380px -60px;
+            }
+        }
+
+        &_next
+        {
+            margin-right: 30px;
+
+            &:hover
+            {
+
+            }
+        }
     }
 
     &__background
@@ -153,5 +174,13 @@
         {
             margin: 40px auto 0;
         }
+    }
+
+    &__pagination
+    {
+        margin: -22px auto 0;
+        width: 145px;
+        height: 45px;
+        line-height: 45px;
     }
 }

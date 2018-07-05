@@ -1,41 +1,57 @@
 .text
 {
-    //----------fonts----------
-    &_font-hero
+    &_font
     {
-        font: 24px/32px 'Lato', sans-serif;
+        &_hero
+        {
+            font: 24px/32px 'Lato', sans-serif;
+        }
+
+        &_h3
+        {
+            font: 900 78px/88px 'Lato', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        &_nav-button
+        {
+            font: 700 15px/18px 'Source Sans Pro', sans-serif;
+        }
+
+        &_hero-button
+        {
+            font: 700 18px/32px 'Source Sans Pro', sans-serif;
+        }
+
+        &_small
+        {
+            font: 600 12px/40px 'Source Sans Pro', sans-serif;
+        }
     }
 
-    &_font-h3
+    &_color
     {
-        font: 900 78px/88px 'Lato', sans-serif;
-        letter-spacing: 3px;
-    }
+        &_white-blackout
+        {
+            color: #a5b1c0;
+        }
 
-    &_font-nav-button
-    {
-        font: 700 15px/18px 'Source Sans Pro', sans-serif;
-    }
+        &_white
+        {
+            color: #fff;
+        }
 
-    //----------colors----------
-    &_color-white-blackout
-    {
-        color: #a5b1c0;
-    }
+        &_main
+        {
+            color: #536a86;
+        }
 
-    &_color-white
-    {
-        color: #fff;
-    }
-
-    &_color-main
-    {
-        color: #536a86;
-    }
-
-    //----------background colors----------
-    &_background-color-main
-    {
-        background-color: #536a86;
+        &_hover
+        {
+            &:hover
+            {
+                color: #3cbb9b;
+            }
+        }
     }
 }
