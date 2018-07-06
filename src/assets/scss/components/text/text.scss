@@ -50,12 +50,17 @@
 
         &_h6
         {
-            font: 600 20px/26px 'Lato', sans-serif;
+            font: 700 20px/26px 'Lato', sans-serif;
         }
 
         &_figcaption
         {
             font: 14px/18px 'Lato', sans-serif;
+        }
+
+        &_figure-small
+        {
+            font: 700 16px/22px 'Lato', sans-serif;
         }
     }
 
@@ -83,5 +88,10 @@
                 color: #3cbb9b;
             }
         }
+    }
+
+    &_uppercase
+    {
+        text-transform: uppercase;
     }
 }

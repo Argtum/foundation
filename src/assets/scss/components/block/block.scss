@@ -1,40 +1,239 @@
 .block
 {
+    &__background
+    {
+        &_latest-works
+        {
+            min-height: 1250px;
+        }
+
+        &_hero-carousel
+        {
+            min-height: 880px;
+
+            &_1
+            {
+                @extend .block__background_hero-carousel;
+                background: url("../img/hero-carousel__element_background-1.jpg") no-repeat 0 0;
+            }
+
+            &_2
+            {
+                @extend .block__background_hero-carousel;
+                background: url("../img/hero-carousel__element_background-2.jpg") no-repeat 0 0;
+            }
+
+            &_3
+            {
+                @extend .block__background_hero-carousel;
+                background: url("../img/hero-carousel__element_background-3.jpg") no-repeat 0 0;
+            }
+
+            &_4
+            {
+                @extend .block__background_hero-carousel;
+                background: url("../img/hero-carousel__element_background-4.jpg") no-repeat 0 0;
+            }
+
+            &_5
+            {
+                @extend .block__background_hero-carousel;
+                background: url("../img/hero-carousel__element_background-5.jpg") no-repeat 0 0;
+            }
+        }
+    }
+
     &__title
     {
-        padding-left: 110px;
+        margin-top: 100px;
+
+        &_merit
+        {
+            padding-left: 110px;
+        }
+
+        &_hero-carousel
+        {
+            &_1
+            {
+                padding-top: 290px;
+            }
+
+            &_2
+            {
+                padding-top: 240px;
+            }
+
+            &_3-1
+            {
+                padding: 20px 40px;
+                width: 550px;
+            }
+
+            &_3-2
+            {
+                padding: 20px 40px;
+                margin-top: 5px;
+                width: 740px;
+            }
+
+            &_4-1
+            {
+                padding: 20px 40px;
+                width: 710px;
+                margin: 0 0 0 auto;
+            }
+
+            &_4-2
+            {
+                padding: 20px 40px;
+                width: 820px;
+                margin: 5px 0 0 auto;
+            }
+
+            &_5
+            {
+                padding-top: 80px;
+            }
+        }
     }
 
     &__text
     {
-        @extend .block__title;
-        margin-top: 20px;
+        margin-top: 15px;
+
+        &_merit
+        {
+            @extend .block__title_merit;
+            margin-top: 20px;
+        }
+
+        &_hero-carousel
+        {
+            &_1
+            {
+                margin-top: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            &_2
+            {
+                margin-top: 20px;
+            }
+
+            &_3
+            {
+                margin-top: 35px;
+            }
+
+            &_4
+            {
+                margin-top: 20px;
+            }
+
+            &_5
+            {
+                margin-top: 20px;
+            }
+        }
     }
 
     &__img
     {
-        &_1
+        &_merit
         {
-            margin: 5px 0 0 10px;
-            width: 61px;
-            height: 53px;
-            background: url("../img/spritesheet.png") no-repeat -132px -272px;
+            &_1
+            {
+                margin: 5px 0 0 10px;
+                width: 61px;
+                height: 53px;
+                background: url("../img/spritesheet.png") no-repeat -132px -272px;
+            }
+
+            &_2
+            {
+                margin: 5px 0 0 35px;
+                width: 46px;
+                height: 65px;
+                background: url("../img/spritesheet.png") no-repeat -233px -272px;
+            }
+
+            &_3
+            {
+                margin: 5px 0 0 35px;
+                width: 56px;
+                height: 53px;
+                background: url("../img/spritesheet.png") no-repeat -319px -272px;
+            }
+        }
+    }
+
+    &__carousel
+    {
+        &_latest-works
+        {
+            min-height: 185px;
+            margin: 80px auto 130px;
+        }
+    }
+
+    &__button
+    {
+        &_get-in-touch
+        {
+            margin: 40px auto 20px;
+            line-height: 50px;
         }
 
-        &_2
+        &_hero-carousel
         {
-            margin: 5px 0 0 35px;
-            width: 46px;
-            height: 65px;
-            background: url("../img/spritesheet.png") no-repeat -233px -272px;
-        }
+            &_1
+            {
+                margin: 65px auto 0;
+            }
 
-        &_3
-        {
-            margin: 5px 0 0 35px;
-            width: 56px;
-            height: 53px;
-            background: url("../img/spritesheet.png") no-repeat -319px -272px;
+            &_2
+            {
+                margin-top: 60px;
+            }
+
+            &_3
+            {
+                margin-top: 50px;
+            }
+
+            &_4
+            {
+                margin-top: 60px;
+            }
+
+            &_5
+            {
+                margin: 40px auto 0;
+            }
         }
+    }
+
+    &_pagination
+    {
+        margin: -20px auto 0;
+        width: 145px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    &_who-we-are
+    {
+        min-height: 670px;
+    }
+
+    &_merit
+    {
+        margin: 55px 0 50px 0;
+    }
+
+    &_get-in-touch
+    {
+        min-height: 480px;
     }
 }

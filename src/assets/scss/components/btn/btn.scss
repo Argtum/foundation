@@ -2,14 +2,6 @@
 {
     cursor: pointer;
 
-    &:hover
-    {
-        .btn__link
-        {
-            color: $hover_font_color;
-        }
-    }
-
     &_hamburger-menu
     {
         @media screen and (max-width: 1023px)

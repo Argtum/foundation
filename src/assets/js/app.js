@@ -8,7 +8,7 @@ import Foundation from 'foundation-sites';
 
 $(window).on('load', function (){
     $(document).foundation();
-    $(".owl-carousel").owlCarousel(
+    $("#owl-carousel").owlCarousel(
         {
             loop:true,
             margin:30,
