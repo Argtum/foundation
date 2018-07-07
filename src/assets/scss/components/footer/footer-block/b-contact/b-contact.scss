@@ -1,0 +1,61 @@
+.b-contact
+{
+    font: 600 14px/22px 'Lato', sans-serif;
+    color: $footer_font_color;
+
+    &__icon
+    {
+        &_address
+        {
+            margin: 5px 15px 0 0;
+            float: left;
+            width: 7px;
+            height: 12px;
+            background: url("../img/spritesheet.png") no-repeat -173px -20px;
+        }
+
+        &_phone
+        {
+            margin: 5px 15px 0 0;
+            float: left;
+            width: 7px;
+            height: 13px;
+            background: url("../img/spritesheet.png") no-repeat -373px -20px;
+        }
+
+        &_mail
+        {
+            margin: 7px 15px 0 0;
+            float: left;
+            width: 11px;
+            height: 9px;
+            background: url("../img/spritesheet.png") no-repeat -220px -20px;
+            cursor: pointer;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -322px -20px;
+
+                .block-contact__link
+                {
+                    color: $hover_font_color;
+                }
+            }
+        }
+    }
+
+    &__link
+    {
+        cursor: pointer;
+
+        &:hover
+        {
+            color: $hover_font_color;
+
+            .b-contact__icon_mail
+            {
+                background: url("../img/spritesheet.png") no-repeat -322px -20px;
+            }
+        }
+    }
+}
