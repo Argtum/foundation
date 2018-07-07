@@ -1,0 +1,63 @@
+.navigation
+{
+    min-height: 110px;
+
+    @media screen and (max-width: 1023px)
+    {
+        min-height: 50px;
+    }
+
+    &__logo
+    {
+        cursor: pointer;
+        float: left;
+
+        &_small
+        {
+            margin: 15px 0 0 10px;
+            width: 80px;
+            height: 20px;
+            background: url("../img/spritesheet.png") no-repeat -432px -252px;
+            line-height: 50px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -415px -312px;
+            }
+        }
+
+        &_large
+        {
+            width: 161px;
+            height: 40px;
+            margin: 35px 0;
+            background: url("../img/spritesheet.png") no-repeat -438px -20px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -438px -100px;
+            }
+        }
+    }
+
+    &__form
+    {
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        background: url("../img/spritesheet.png") no-repeat -380px -220px;
+        margin: 50px 20px 20px auto;
+
+
+        @media screen and (max-width: 1023px)
+        {
+            margin: 20px 20px 20px auto;
+        }
+    }
+
+    &__menu
+    {
+        margin-left: 70px;
+    }
+}
+

@@ -1,0 +1,155 @@
+.footer-block
+{
+    &__title
+    {
+        font: 600 17px/24px 'Lato', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $white_font_color;
+    }
+
+    &__text
+    {
+        margin-top: 15px;
+        font: 600 14px/22px 'Lato', sans-serif;
+        color: $footer_font_color;
+    }
+
+    &__form
+    {
+        margin-top: 15px;
+        height: 40px;
+
+        &_field
+        {
+            font: 600 14px/22px 'Source Sans Pro', sans-serif;
+            color: #a3b1bf;
+            background-color: #505C6C;
+            border-radius: 3px;
+            border: none;
+        }
+
+        &_button
+        {
+            display: block;
+            position: absolute;
+            margin: -51px 0 0 177px;
+            width: 88px;
+            height: 30px;
+            border-radius: 3px;
+            font: 700 13px/8px 'Source Sans Pro', sans-serif;
+            color: $white_font_color;
+            text-transform: uppercase;
+        }
+    }
+
+    &__logo
+    {
+        margin-top: 20px;
+        width: 129px;
+        height: 32px;
+        background: url("../img/spritesheet.png") no-repeat -20px -365px;
+        cursor: pointer;
+
+        &:hover
+        {
+            background: url("../img/spritesheet.png") no-repeat -432px -180px;
+        }
+    }
+
+    &__container
+    {
+        margin: 20px 0 0 0;
+
+        &_figure
+        {
+            width: 125px;
+            height: 85px;
+        }
+    }
+
+    &__link
+    {
+        display: block;
+        width: 130px;
+        background: url("../img/icon-right.png") no-repeat 110px 50%;
+        cursor: pointer;
+
+        &:hover
+        {
+            background: url("../img/icon-right_hover.png") no-repeat 115px 50%;
+
+            .footer-block__link_text
+            {
+                color: $hover_font_color;
+            }
+        }
+
+        &_text
+        {
+            color: $footer_font_color;
+            font: 900 14px/22px 'Lato', sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__contact
+    {
+        margin: 15px 0 0 0;
+        font: 600 14px/22px 'Lato', sans-serif;
+        color: $footer_font_color;
+
+        &_address-icon
+        {
+            margin: 5px 15px 0 0;
+            float: left;
+            width: 7px;
+            height: 12px;
+            background: url("../img/spritesheet.png") no-repeat -173px -20px;
+        }
+
+        &_phone-icon
+        {
+            margin: 5px 15px 0 0;
+            float: left;
+            width: 7px;
+            height: 13px;
+            background: url("../img/spritesheet.png") no-repeat -373px -20px;
+        }
+
+        &_mail-icon
+        {
+            margin: 7px 15px 0 0;
+            float: left;
+            width: 11px;
+            height: 9px;
+            background: url("../img/spritesheet.png") no-repeat -220px -20px;
+            cursor: pointer;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -322px -20px;
+
+                .footer-block__contact_link
+                {
+                    color: $hover_font_color;
+                }
+            }
+        }
+
+        &_link
+        {
+            cursor: pointer;
+
+            &:hover
+            {
+                color: $hover_font_color;
+
+                .footer-block__contact_mail-icon
+                {
+                    background: url("../img/spritesheet.png") no-repeat -322px -20px;
+                }
+            }
+        }
+    }
+}

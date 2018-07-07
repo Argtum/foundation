@@ -12,6 +12,14 @@
         opacity: 1;
     }
 
+    &__plus-image
+    {
+        &_small
+        {
+            margin-top: 42px;
+        }
+    }
+
     &_big
     {
         @extend .figure;
@@ -24,7 +32,7 @@
         }
     }
 
-    &_small
+    &_middle
     {
         @extend .figure;
         width: 270px;
@@ -32,9 +40,10 @@
         padding-top: 70px;
     }
 
-    &__img
+    &_small
     {
-
+        width: 125px;
+        height: 85px;
     }
 
     &__figcaption

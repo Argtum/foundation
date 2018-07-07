@@ -1,0 +1,19 @@
+@import "footer-block/footer-block";
+
+.footer
+{
+    min-height: 365px;
+
+    &__background
+    {
+        background-color: #313f52;
+    }
+
+    &__block
+    {
+        margin-top: 70px;
+        padding: 0;
+        max-width: 270px;
+        width: 100%;
+    }
+}

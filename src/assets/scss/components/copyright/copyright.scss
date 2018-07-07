@@ -1,0 +1,53 @@
+.copyright
+{
+    min-height: 80px;
+    background-color: #293546;
+
+    &__text
+    {
+        font: 600 14px/22px 'Source Sans Pro', sans-serif;
+        color: $footer_ending_font_color;
+        padding-top: 30px;
+    }
+
+    &__menu
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_element
+        {
+            font: 600 14px/22px 'Source Sans Pro', sans-serif;
+            color: $footer_ending_font_color;
+            cursor: pointer;
+            margin: 0 5px 0 5px;
+
+            &:before
+            {
+                content: "·";
+                margin-right: 10px;
+                color: $footer_ending_font_color;
+            }
+
+            &:nth-child(1)
+            {
+                margin-right: 0;
+
+                &:before
+                {
+                    content: "";
+                }
+            }
+
+            &:nth-child(6)
+            {
+                margin-right: 0;
+            }
+
+            &:hover
+            {
+                color: $hover_font_color;
+            }
+        }
+    }
+}

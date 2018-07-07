@@ -1,12 +1,19 @@
-.btn
+.b-button
 {
     cursor: pointer;
+
+    &:hover
+    {
+        &__text
+        {
+            color: #3cbb9b;
+        }
+    }
 
     &_hamburger-menu
     {
         @media screen and (max-width: 1023px)
         {
-            cursor: pointer;
             width: 30px;
             height: 30px;
             display: block;
@@ -17,34 +24,29 @@
 
     &_navigation_big
     {
-        @extend .btn;
         width: 60px;
         height: 60px;
     }
 
     &_social
     {
-        @extend .btn;
         padding: 20px 15px;
     }
 
     &_hero
     {
-        @extend .btn;
         width: 295px;
         height: 65px;
     }
 
     &_menu
     {
-        @extend .btn;
         height: 50px;
         padding: 15px 18px;
     }
 
     &_get-in-touch
     {
-        @extend .btn;
         width: 150px;
         height: 50px;
     }
