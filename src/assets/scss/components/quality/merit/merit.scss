@@ -1,0 +1,36 @@
+.merit
+{
+    &__title
+    {
+        font: 700 26px/34px 'Lato', sans-serif;
+        color: $main_font_color;
+        letter-spacing: 1px;
+        padding-left: 110px;
+    }
+
+    &__text
+    {
+        font: 600 15px/24px 'Lato', sans-serif;
+        color: $main_font_color;
+        margin-top: 20px;
+        padding-left: 110px;
+    }
+
+    &__image
+    {
+        &_one
+        {
+            margin: 5px 0 0 10px;
+        }
+
+        &_two
+        {
+            margin: 5px 0 0 35px;
+        }
+
+        &_tree
+        {
+            margin: 5px 0 0 35px;
+        }
+    }
+}
