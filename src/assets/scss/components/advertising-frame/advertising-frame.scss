@@ -1,0 +1,237 @@
+.advertising-frame
+{
+    min-height: 880px;
+
+    &:hover
+    {
+        .advertising-frame__navigation, .advertising-frame__pagination
+        {
+            opacity: 1;
+        }
+    }
+
+    &__title
+    {
+        font: 900 78px/88px 'Lato', sans-serif;
+        color: $white_font_color;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        &_one
+        {
+            padding-top: 290px;
+        }
+
+        &_two
+        {
+            padding-top: 240px;
+        }
+
+        &_tree
+        {
+            padding-top: 190px;
+
+            &_part-one
+            {
+                background-color: #536A86;
+                padding: 20px 40px;
+                width: 550px;
+            }
+
+            &_part-two
+            {
+                background-color: #536A86;
+                padding: 20px 40px;
+                margin-top: 5px;
+                width: 740px;
+            }
+        }
+
+        &_four
+        {
+            padding-top: 75px;
+
+            &_part-one
+            {
+                background-color: #536A86;
+                padding: 20px 40px;
+                width: 710px;
+                margin: 0 0 0 auto;
+            }
+
+            &_part-two
+            {
+                background-color: #536A86;
+                padding: 20px 40px;
+                width: 820px;
+                margin: 5px 0 0 auto;
+            }
+        }
+
+        &_fifth
+        {
+            padding-top: 80px;
+        }
+    }
+
+    &__text
+    {
+        font: 24px/32px 'Lato', sans-serif;
+
+        &_one
+        {
+            color: #a5b1c0;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        &_two
+        {
+            color: $white_font_color;
+            margin-top: 20px;
+        }
+
+        &_tree
+        {
+            color: #536a86;
+            margin-top: 35px;
+        }
+
+        &_four
+        {
+            color: $white_font_color;
+            margin-top: 20px;
+        }
+
+        &_fifth
+        {
+            margin-top: 20px;
+            color: #a5b1c0;
+        }
+    }
+
+    &__button
+    {
+        font: 700 18px/32px 'Source Sans Pro', sans-serif;
+        color: $white_font_color;
+        width: 295px;
+        height: 65px;
+        cursor: pointer;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        &_one
+        {
+            margin: 65px auto 0;
+        }
+
+        &_two
+        {
+            margin-top: 60px;
+        }
+
+        &_tree
+        {
+            margin-top: 50px;
+        }
+
+        &_four
+        {
+            margin-top: 60px;
+        }
+
+        &_fifth
+        {
+            margin: 40px auto 0;
+        }
+    }
+
+    &__navigation
+    {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+        transition: all 200ms ease-out;
+
+        &_prev
+        {
+            margin-left: 30px;
+
+            &_image
+            {
+                display: block;
+                margin-left: 7px;
+                width: 16px;
+                height: 27px;
+                background: url("../img/spritesheet.png") no-repeat -69px -20px;
+            }
+
+            &:hover
+            {
+                .advertising-frame__navigation_prev_image
+                {
+                    background: url("../img/icon-left-open-maxi-hover.png") no-repeat;
+                }
+            }
+        }
+
+        &_next
+        {
+            margin-right: 30px;
+
+            &_image
+            {
+                display: block;
+                margin-left: 7px;
+                width: 16px;
+                height: 27px;
+                background: url("../img/spritesheet.png") no-repeat -234px -73px;
+            }
+
+            &:hover
+            {
+                .advertising-frame__navigation_next_image
+                {
+                    background: url("../img/icon-right-open-maxi-hover.png") no-repeat;
+                }
+            }
+        }
+    }
+
+    &__pagination
+    {
+        margin: -20px auto 0;
+        width: 145px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 3px;
+        background-color: #fff;
+        opacity: 0;
+        transition: all 200ms ease-out;
+    }
+
+    &_one
+    {
+        background: url("../img/hero-carousel__element_background-1.jpg") no-repeat 0 0;
+    }
+
+    &_two
+    {
+        background: url("../img/hero-carousel__element_background-2.jpg") no-repeat 0 0;
+    }
+
+    &_tree
+    {
+        background: url("../img/hero-carousel__element_background-3.jpg") no-repeat 0 0;
+    }
+
+    &_four
+    {
+        background: url("../img/hero-carousel__element_background-4.jpg") no-repeat 0 0;
+    }
+
+    &_fifth
+    {
+        background: url("../img/hero-carousel__element_background-5.jpg") no-repeat 0 0;
+    }
+}
