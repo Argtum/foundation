@@ -22,6 +22,8 @@ const PRODUCTION = !!(yargs.argv.production);
 // Load settings from settings.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
+const webpack = require('webpack');
+
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
   return yaml.load(ymlFile);
@@ -96,6 +98,13 @@ function sass() {
 }
 
 let webpackConfig = {
+  plugins: [
+      new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          'window.jQuery': 'jquery'
+      }),
+  ],
   module: {
     rules: [
       {

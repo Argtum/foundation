@@ -58,6 +58,33 @@
     &__menu
     {
         margin-left: 70px;
+
+        &_button
+        {
+            cursor: pointer;
+            padding: 0 21px;
+            float: left;
+
+            &:hover
+            {
+                box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
+                background-color: #f5f7f9;
+                z-index: 2;
+
+                .navigation__menu_button_link
+                {
+                    color: $hover_font_color;
+                }
+            }
+
+            &_link
+            {
+                font: 700 15px/18px 'Source Sans Pro', sans-serif;
+                color: $main_font_color;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
     }
 }
 

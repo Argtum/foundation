@@ -1,0 +1,53 @@
+.owl-carousel
+{
+    &__navigation
+    {
+        width: 30px;
+        height: 30px;
+
+        &_prev
+        {
+            &_image
+            {
+                display: block;
+                margin-left: 7px;
+                width: 16px;
+                height: 27px;
+                background: url("../img/spritesheet.png") no-repeat -69px -20px;
+            }
+
+            &:hover
+            {
+                .advertising-frame__navigation_prev_image
+                {
+                    background: url("../img/icon-left-open-mini-hover.png") no-repeat;
+                }
+            }
+        }
+
+        &_next
+        {
+            &_image
+            {
+                display: block;
+                margin-left: 7px;
+                width: 16px;
+                height: 27px;
+                background: url("../img/spritesheet.png") no-repeat -234px -73px;
+            }
+
+            &:hover
+            {
+                .advertising-frame__navigation_next_image
+                {
+                    background: url("../img/icon-right-open-mini-hover.png") no-repeat;
+                }
+            }
+        }
+    }
+
+    &__pagination
+    {
+
+    }
+}

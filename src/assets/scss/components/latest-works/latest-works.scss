@@ -1,3 +1,5 @@
+@import "owl-carousel/owl-carousel";
+
 .latest-works
 {
     min-height: 1265px;
@@ -7,7 +9,7 @@
     {
         font: 600 44px/54px 'Lato', sans-serif;
         color: $main_font_color;
-        margin-top: 125px;
+        margin-top: 120px;
     }
 
     &__text
@@ -19,11 +21,11 @@
 
     &__figure
     {
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     &__carousel
     {
-        margin-top: 70px;
+        margin-top: 80px;
     }
 }

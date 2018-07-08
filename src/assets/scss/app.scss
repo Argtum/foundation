@@ -56,12 +56,7 @@
 @import "constants";
 @import "reset";
 
-@import "components/b-button/b-button";
-@import "components/text/text";
-@import "components/block/block";
-@import "components/background/background";
 @import "components/figure/figure";
-
 @import "components/header/header";
 @import "components/navigation/navigation";
 @import "components/advertising-frame/advertising-frame";
@@ -70,5 +65,7 @@
 @import "components/get-in/get-in";
 @import "components/footer/footer";
 @import "components/copyright/copyright";
+@import "owlCarousel/owl.carousel";
+@import "components/hamburger-menu/hamburger-menu";
 
-@import 'style';
+//@import 'style';

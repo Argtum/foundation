@@ -2,37 +2,37 @@
     <div class="navigation__logo navigation__logo_small"></div>
     <div class="navigation__form form__image text-right"></div>
     <div class="navigation__menu float-left menu simple" data-magellan>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover navigation__menu-element_home">
+        <div class="navigation__menu_button navigation__menu-element_home">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#">
                 home
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover">
+        <div class="navigation__menu_button">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#latestWorks">
                 latest works
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover">
+        <div class="navigation__menu_button">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#">
                 blog
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover">
+        <div class="navigation__menu_button">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#">
                 pages
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover">
+        <div class="navigation__menu_button">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#features">
                 features
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover navigation__menu-element_mega-menu">
+        <div class="navigation__menu_button navigation__menu-element_mega-menu">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#">
                 mega menu
             </a>
         </div>
-        <div class="b-button b-button_menu b-button_border_hover b-button_border_white background_color_hover">
+        <div class="navigation__menu_button background_color_hover">
             <a class="b-button__text text_color_main text_font_menu-button text_uppercase" href="#contactUs">
                 contact us
             </a>
@@ -125,7 +125,7 @@
 </div>-->
 
 <article class="off-canvas-content" data-off-canvas-content>
-    <a class="b-button b-button_hamburger-menu hide-for-large" data-toggle="offCanvas" href="#"></a>
+    <a class="hamburger-menu hide-for-large" data-toggle="offCanvas" href="#"></a>
     <header class="header show-for-large" id="top">
         <div class="grid-container">
             <div class="header__contact float-left">
@@ -466,12 +466,12 @@
                         <span class="figure figure_big">
                             <img class="figure__plus-image_big" src="{{root}}assets/img/icon-plus.png" alt="add something">
                         </span>
-                        <img class="figure__img" src="{{root}}assets/img/grand_motel.jpg" alt="put you slide">
-                        <div class="figure__figcaption background_color_white">
-                            <h6 class="figure__figcaption_title text_font_h6 text_color_main text_color_hover">
+                        <img class="figure__img lazyOwl" src="{{root}}assets/img/grand_motel.jpg" alt="put you slide">
+                        <div class="figure__figcaption">
+                            <h6 class="figure__figcaption_title">
                                 Grand Motel gets an identity brushup
                             </h6>
-                            <span class="figure__figcaption_text text_color_main text_font_figcaption">
+                            <span class="figure__figcaption_text">
                                 Identity
                             </span>
                         </div>
@@ -480,18 +480,18 @@
                         <span class="figure figure_big">
                             <img class="figure__plus-image_big" src="{{root}}assets/img/icon-plus.png" alt="add something">
                         </span>
-                        <img class="figure__img" src="{{root}}assets/img/brand.jpg" alt="put you slide">
-                        <div class="figure__figcaption background_color_white">
-                            <h6 class="figure__figcaption_title text_font_h6 text_color_main text_color_hover">
+                        <img class="figure__img lazyOwl" src="{{root}}assets/img/brand.jpg" alt="put you slide">
+                        <div class="figure__figcaption">
+                            <h6 class="figure__figcaption_title">
                                 Fresh branding for a creative startup
                             </h6>
-                            <span class="figure__subheader">
+                            <span class="figure__figcaption_text">
                                 Identity
                             </span>
                         </div>
                     </figure>
-                    <div class="latest_works__carousel owl-carousel" id="owl-carousel">
-                        <figure class="float-left text-center">
+                    <div class="latest-works__carousel owl-carousel" id="owl-carousel">
+                        <figure class="float-left" data-merge="1">
                             <span class="figure figure_middle ">
                                 Astory & Yancy
                                 <br>
@@ -499,9 +499,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/astor.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/astor.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                             <span class="figure figure_middle">
                                 El Corcho
                                 <br>
@@ -509,9 +509,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/el_corcho.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/el_corcho.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                            <span class="figure figure_middle">
                                 Embroidered
                                 <br>
@@ -519,9 +519,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/embroidered.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/embroidered.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                             <span class="figure figure_middle">
                                 Vinyl Record
                                 <br>
@@ -529,9 +529,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/record.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/record.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                            <span class="figure figure_middle">
                                 Signwall
                                 <br>
@@ -539,9 +539,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/signwall.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/signwall.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                             <span class="figure figure_middle">
                                 Simpli Nota
                                 <br>
@@ -549,9 +549,9 @@
                                     Identity
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/simpli_nota.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/simpli_nota.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left">
                             <span class="figure figure_middle">
                                 Tri Fold Brochure
                                 <br>
@@ -559,9 +559,9 @@
                                     Print
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/tri_fold_brochure.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/tri_fold_brochure.jpg" alt="put you slide">
                         </figure>
-                        <figure class="float-left text-center">
+                        <figure class="float-left" data-merge="1">
                            <span class="figure figure_middle">
                                 Vintage Bicycles
                                 <br>
@@ -569,17 +569,17 @@
                                     Interactive
                                 </span>
                             </span>
-                            <img class="figure__img" src="{{root}}assets/img/vintage_bicycles.jpg" alt="put you slide">
+                            <img class="figure__img lazyOwl" src="{{root}}assets/img/vintage_bicycles.jpg" alt="put you slide">
                         </figure>
-                        <div class="owl-naw">
-                            <div class="owl-prev"></div>
-                            <div class="owl-next"></div>
-                        </div>
-                        <div class="owl-dots">
-                            <div class="owl-dot active"></div>
-                            <div class="owl-dot"></div>
-                            <div class="owl-dot"></div>
-                        </div>
+                    </div>
+                    <div class=" owl-naw">
+                        <div class="owl-carousel__navigation owl-carousel__navigation_prev_image owl-prev"></div>
+                        <div class="owl-carousel__navigation owl-carousel__navigation_next_image owl-next"></div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"></div>
+                        <div class="owl-dot"></div>
+                        <div class="owl-dot"></div>
                     </div>
                 </div>
             </div>

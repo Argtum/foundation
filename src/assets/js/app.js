@@ -5,6 +5,7 @@ window.$ = $;
 
 import Foundation from 'foundation-sites';
 
+import 'owl.carousel';
 
 $(window).on('load', function (){
     $(document).foundation();
@@ -12,22 +13,28 @@ $(window).on('load', function (){
         {
             loop:true,
             margin:30,
-            nav:true,
-            autoWidth:true,
-            //responsiveClass:true,
+            navigation:true,
+            autoplay:true,
+            smartSpeed:1000,
+            lazyLoad:true,
+            pagination:true,
+            merge:true,
             responsive:{
-                0:{
+                320:{
+                    items:1,
+                    nav:true
+                },
+                570:{
                     items:2,
                     nav:true
                 },
-                640:{
+                870:{
                     items:3,
                     nav:true
                 },
-                1023:{
+                1170:{
                     items:4,
-                    nav:true,
-                    loop:true
+                    nav:true
                 }
             }
         }
