@@ -1,101 +1,20 @@
+@import "header-contact/header-contact";
+@import "header-social/header-social";
+
 .header
 {
-    height: 40px;
+    min-height: 40px;
+    background-color: #f5f7f9;
 
-    &__feedback
+    &__contact
     {
+        float: left;
         margin-right: auto;
-
-        &_mail
-        {
-            margin-left: 10px;
-        }
-
-        &_phone
-        {
-            background: url("../img/icon-mobile-dark.png") no-repeat 0 50%;
-            margin-left: 25px;
-            padding-left: 15px;
-        }
     }
 
-    &__menu-social
+    &__sociale
     {
-        //padding: 5px;
-    }
-
-    &__button
-    {
-        &_1
-        {
-            width: 7px;
-            height: 13px;
-            background: url("../img/spritesheet.png") no-repeat -380px -60px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -173px -113px #4567b3;
-            }
-        }
-
-        &_2
-        {
-            width: 11px;
-            height: 11px;
-            background: url("../img/spritesheet.png") no-repeat -115px -157px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -222px -157px #dd5745;
-            }
-        }
-
-        &_3
-        {
-            width: 11px;
-            height: 9px;
-            background: url("../img/spritesheet.png") no-repeat -371px -157px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -166px -205px #2fbbed;
-            }
-        }
-
-        &_4
-        {
-            width: 11px;
-            height: 9px;
-            background: url("../img/spritesheet.png") no-repeat -273px -157px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -322px -157px #d94347;
-            }
-        }
-
-        &_5
-        {
-            width: 13px;
-            height: 10px;
-            background: url("../img/spritesheet.png") no-repeat -59px -107px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -330px -107px #2f79ff;
-            }
-        }
-
-        &_6
-        {
-            width: 12px;
-            height: 11px;
-            background: url("../img/spritesheet.png") no-repeat -11px -157px;
-
-            &:hover
-            {
-                background: url("../img/spritesheet.png") no-repeat -63px -157px #eb6397;
-            }
-        }
+        margin-left: auto;
+        line-height: 40px;
     }
 }

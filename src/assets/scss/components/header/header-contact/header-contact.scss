@@ -1,0 +1,37 @@
+.header-contact
+{
+    &__mail
+    {
+        font: 700 12px/40px 'Source Sans Pro', sans-serif;
+        color: $main_font_color;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover
+        {
+            color: $hover_font_color;
+
+            .header-contact__mail_picture
+            {
+                background: url("../img/spritesheet.png") no-repeat -322px -20px;
+            }
+        }
+
+        &_picture
+        {
+            margin-top: 15px;
+            width: 11px;
+            height: 9px;
+            background: url("../img/spritesheet.png") no-repeat -271px -20px;
+        }
+    }
+
+    &__phone
+    {
+        font: 700 12px/20px 'Source Sans Pro', sans-serif;
+        color: $main_font_color;
+        background: url("../img/icon-mobile-dark.png") no-repeat 0 50%;
+        margin-left: 25px;
+        padding-left: 15px;
+    }
+}

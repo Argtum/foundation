@@ -1,0 +1,81 @@
+.header-social
+{
+    &__button
+    {
+        cursor: pointer;
+        padding: 20px 15px;
+        float: left;
+
+        &_one
+        {
+            width: 7px;
+            height: 13px;
+            background: url("../img/spritesheet.png") no-repeat -380px -60px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -173px -113px #4567b3;
+            }
+        }
+
+        &_two
+        {
+            width: 11px;
+            height: 11px;
+            background: url("../img/spritesheet.png") no-repeat -115px -157px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -222px -157px #dd5745;
+            }
+        }
+
+        &_tree
+        {
+            width: 11px;
+            height: 9px;
+            background: url("../img/spritesheet.png") no-repeat -371px -157px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -166px -205px #2fbbed;
+            }
+        }
+
+        &_four
+        {
+            width: 11px;
+            height: 9px;
+            background: url("../img/spritesheet.png") no-repeat -273px -157px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -322px -157px #d94347;
+            }
+        }
+
+        &_fifth
+        {
+            width: 13px;
+            height: 10px;
+            background: url("../img/spritesheet.png") no-repeat -59px -107px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -330px -107px #2f79ff;
+            }
+        }
+
+        &_six
+        {
+            width: 12px;
+            height: 11px;
+            background: url("../img/spritesheet.png") no-repeat -11px -157px;
+
+            &:hover
+            {
+                background: url("../img/spritesheet.png") no-repeat -63px -157px #eb6397;
+            }
+        }
+    }
+}
