@@ -63,10 +63,19 @@
     {
         margin: 20px 0 0 0;
 
-        &_figure
+        &_one
         {
-            width: 125px;
-            height: 85px;
+            margin: 0 5px 5px 0;
+        }
+
+        &_two
+        {
+            margin: 0 0 5px 0;
+        }
+
+        &_tree
+        {
+            margin: 0 5px 0 0;
         }
     }
 

@@ -2,25 +2,25 @@
 
 .quality
 {
-    min-height: 670px;
+    min-height: 620px;
 
     &__title
     {
         font: 700 44px/54px 'Lato', sans-serif;
         color: $main_font_color;
-        margin-top: 120px;
+        margin-top: 70px;
     }
 
     &__text
     {
         font: 21px/33px 'Lato', sans-serif;
         color: $main_font_color;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     &__merit
     {
-        margin-top: 75px;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        //margin-bottom: 50px;
     }
 }

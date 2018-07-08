@@ -1,0 +1,29 @@
+.latest-works
+{
+    min-height: 1265px;
+    background-color: #f1f5f7;
+
+    &__title
+    {
+        font: 600 44px/54px 'Lato', sans-serif;
+        color: $main_font_color;
+        margin-top: 125px;
+    }
+
+    &__text
+    {
+        font: 21px/33px 'Lato', sans-serif;
+        color: $main_font_color;
+        margin-top: 15px;
+    }
+
+    &__figure
+    {
+        margin-top: 55px;
+    }
+
+    &__carousel
+    {
+        margin-top: 70px;
+    }
+}
