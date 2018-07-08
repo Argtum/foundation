@@ -61,9 +61,11 @@
 
         &_button
         {
+            display: block;
             cursor: pointer;
-            padding: 0 21px;
+            padding: 17px 19px;
             float: left;
+            height: 50px;
 
             &:hover
             {
@@ -79,10 +81,9 @@
 
             &_link
             {
-                font: 700 15px/18px 'Source Sans Pro', sans-serif;
+                font: 700 15px/50px 'Source Sans Pro', sans-serif;
                 color: $main_font_color;
-                height: 50px;
-                line-height: 50px;
+                text-transform: uppercase;
             }
         }
     }
