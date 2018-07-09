@@ -1,4 +1,5 @@
-@import "mega-menu-block/mega-menu-block";
+@import "b-list/b-list";
+@import "b-figure/b-figure";
 
 .mega-menu
 {
@@ -15,4 +16,63 @@
     display: none;
     cursor: auto;
     z-index: 2;
+    margin-top: -1px;
+
+    &__title
+    {
+        font: 900 16px/22px 'Lato', sans-serif;
+        color: $main_font_color;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+
+    &__text
+    {
+        font: 600 14px/22px 'Source Sans Pro', sans-serif;
+        color: $main_font_color;
+
+        &_focus
+        {
+            margin-top: 25px;
+        }
+
+        &_about-us
+        {
+            margin-top: 20px;
+        }
+    }
+
+    &__figure-container
+    {
+        margin-top: 25px;
+    }
+
+    &__button
+    {
+        display: block;
+        color: $white_font_color;
+        border-radius: 3px;
+        font: 700 14px/44px 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+
+        &_focus
+        {
+            margin-top: 30px;
+            width: 133px;
+            height: 44px;
+        }
+
+        &_about-us
+        {
+            width: 115px;
+            height: 44px;
+            margin-top: 30px;
+        }
+    }
+
+    &__list
+    {
+        margin: 20px 0 0;
+    }
 }

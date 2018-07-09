@@ -17,19 +17,50 @@
     {
         &_small
         {
-            margin-top: 35px;
+            margin-top: 30px;
         }
 
         &_large
         {
             margin-top: 77px;
         }
+    }
 
+    &_small
+    {
+        width: 118px;
+        height: 80px;
+        float: left;
     }
 
     &_large
     {
         width: 240px;
         height: 164px;
+    }
+
+    &_one
+    {
+        margin: 0 5px 5px 0;
+    }
+
+    &_two
+    {
+        margin: 0 0 5px 0;
+    }
+
+    &_tree
+    {
+        margin: 0 5px 5px 0;
+    }
+
+    &_four
+    {
+        margin: 0 0 5px 0;
+    }
+
+    &_fifth
+    {
+        margin: 0 5px 0 0;
     }
 }

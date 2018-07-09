@@ -37,7 +37,8 @@
 
         &_mega-menu
         {
-            width: 78px;
+            width: 121px;
+            left: 485px;
         }
     }
 
@@ -46,6 +47,17 @@
         &:hover
         {
             .home-menu, .menu-button__background_home
+            {
+                display: block;
+            }
+        }
+    }
+
+    &_mega-menu
+    {
+        &:hover
+        {
+            .mega-menu, .menu-button__background_mega-menu
             {
                 display: block;
             }
