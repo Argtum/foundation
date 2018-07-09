@@ -1,0 +1,14 @@
+@import "menu-button/menu-button";
+
+.navigation-menu
+{
+    &__button
+    {
+        display: block;
+        cursor: pointer;
+        padding: 16px 19px;
+        float: left;
+        height: 50px;
+        border: 1px solid #fff;
+    }
+}

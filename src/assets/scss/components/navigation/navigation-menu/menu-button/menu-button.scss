@@ -1,0 +1,49 @@
+.menu-button
+{
+    &:hover
+    {
+        box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
+        background-color: #f5f7f9;
+        z-index: 2;
+        border: 1px solid #e5e9ed;
+
+        .menu-button__link
+        {
+            color: $hover_font_color;
+        }
+    }
+
+    &__link
+    {
+        font: 700 15px/50px 'Source Sans Pro', sans-serif;
+        color: $main_font_color;
+        text-transform: uppercase;
+    }
+
+    &__background
+    {
+        display: none;
+        position: absolute;
+        left: 1px;
+        margin-top: 17px;
+        height: 1px;
+        background-color: #f5f7f9;
+        z-index: 3;
+
+        &_home
+        {
+            width: 78px;
+        }
+    }
+
+    &_home
+    {
+        &:hover
+        {
+            .home-menu, .menu-button__background_home
+            {
+                display: block;
+            }
+        }
+    }
+}
