@@ -1,0 +1,18 @@
+@import "mega-menu-block/mega-menu-block";
+
+.mega-menu
+{
+    width: 1170px;
+    min-height: 420px;
+    box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
+    background-color: #f5f7f9;
+    border: 1px solid #e5e9ed;
+    padding: 0 40px;
+    left: -235px;
+    top: 80px;
+    position: absolute;
+    border-radius: 3px;
+    display: none;
+    cursor: auto;
+    z-index: 2;
+}
