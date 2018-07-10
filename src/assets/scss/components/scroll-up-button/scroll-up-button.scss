@@ -1,0 +1,32 @@
+.scroll-up-button
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 3;
+    background-color:  #506a85;
+
+    &:hover
+    {
+        background-color: #506a85;
+
+        .scroll-up-button__picture
+        {
+            background: url("../img/spritesheet.png") no-repeat -76px -272px;
+        }
+    }
+
+    &__picture
+    {
+        display: block;
+        margin: 15px 0 0 12px;
+        width: 16px;
+        height: 9px;
+        background: url("../img/spritesheet.png") no-repeat -20px -272px;
+    }
+}

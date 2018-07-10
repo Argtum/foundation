@@ -56,7 +56,6 @@
 @import "constants";
 @import "reset";
 
-@import "components/figure/figure";
 @import "components/header/header";
 @import "components/navigation/navigation";
 @import "components/advertising-frame/advertising-frame";
@@ -69,5 +68,4 @@
 @import "components/hamburger-menu/hamburger-menu";
 @import "components/home-menu/home-menu";
 @import "components/mega-menu/mega-menu";
-
-//@import 'style';
+@import "components/scroll-up-button/scroll-up-button";

@@ -1,4 +1,4 @@
-.figure
+.latest-works-figure
 {
     opacity: 0;
     cursor: pointer;
@@ -6,7 +6,6 @@
     z-index: 2;
     background-color: rgba(26,187,156,0.9);
     transition: all 200ms ease-out;
-    display: block;
 
     &:hover
     {
@@ -24,7 +23,6 @@
         {
             margin-top: 195px;
         }
-
     }
 
     &__subheader
@@ -66,7 +64,7 @@
         height: 390px;
     }
 
-    &_middle
+    &_small
     {
         width: 270px;
         height: 185px;
@@ -74,11 +72,5 @@
         color: $white_font_color;
         padding-top: 75px;
         text-align: center;
-    }
-
-    &_small
-    {
-        width: 125px;
-        height: 85px;
     }
 }
